@@ -24,7 +24,7 @@ use Tests\TestCase;
 class AccuracyTest extends TestCase
 {
     // Score thresholds — mirror AccuracyReport and ScoreAggregator::classify()
-    private const int AI_THRESHOLD    = 60;
+    private const int AI_THRESHOLD    = 45;
     private const int HUMAN_THRESHOLD = 30;
 
     // Minimum acceptable overall accuracy rates (lenient starting values)

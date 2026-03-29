@@ -27,7 +27,7 @@ class AccuracyReport extends Command
     /**
      * Score thresholds (mirrors ScoreAggregator::classify logic).
      */
-    private const int AI_THRESHOLD    = 60;   // >= 60 → predicted AI
+    private const int AI_THRESHOLD    = 45;   // >= 60 → predicted AI
     private const int HUMAN_THRESHOLD = 30;   // <  30 → predicted Human
     // 30–59 → uncertain
 

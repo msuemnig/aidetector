@@ -128,24 +128,24 @@ final class ScoreAggregatorTest extends TestCase
 
     public function testLinguisticHighConfidenceAlertAddsCorrectPoints(): void
     {
-        // detector 20 pts + Sentence CV alert 12 pts + breadth(1 det) -8 = 24
+        // detector 20 pts + Sentence CV alert 15 pts + breadth(1 det) -8 = 27
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Sentence Length Variation (CV)', 'alert')],
         );
 
-        $this->assertSame(24, $score, 'Sentence CV alert adds 12 pts (20 + 12 - 8 breadth)');
+        $this->assertSame(27, $score, 'Sentence CV alert adds 15 pts (20 + 15 - 8 breadth)');
     }
 
     public function testLinguisticHighConfidenceWarningAddsCorrectPoints(): void
     {
-        // detector 20 pts + Sentence CV warning 6 pts + breadth(1 det) -8 = 18
+        // detector 20 pts + Sentence CV warning 7 pts + breadth(1 det) -8 = 19
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Sentence Length Variation (CV)', 'warning')],
         );
 
-        $this->assertSame(18, $score);
+        $this->assertSame(19, $score);
     }
 
     public function testLinguisticMediumConfidenceAlertAddsReducedPoints(): void
@@ -265,12 +265,12 @@ final class ScoreAggregatorTest extends TestCase
 
     public function testClassifyPossiblyAI(): void
     {
-        $this->assertSame('Possibly AI-Generated', $this->aggregator->classify(45));
+        $this->assertSame('Possibly AI-Generated', $this->aggregator->classify(35));
     }
 
     public function testClassifyLikelyAI(): void
     {
-        $this->assertSame('Likely AI-Generated', $this->aggregator->classify(75));
+        $this->assertSame('Likely AI-Generated', $this->aggregator->classify(50));
     }
 
     // -------------------------------------------------------------------------
@@ -284,11 +284,11 @@ final class ScoreAggregatorTest extends TestCase
 
     public function testColourYellow(): void
     {
-        $this->assertSame('yellow', $this->aggregator->classificationColour(40));
+        $this->assertSame('yellow', $this->aggregator->classificationColour(35));
     }
 
     public function testColourRed(): void
     {
-        $this->assertSame('red', $this->aggregator->classificationColour(70));
+        $this->assertSame('red', $this->aggregator->classificationColour(50));
     }
 }

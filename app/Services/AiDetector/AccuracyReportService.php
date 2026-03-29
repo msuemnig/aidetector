@@ -10,7 +10,7 @@ namespace App\Services\AiDetector;
  */
 final class AccuracyReportService
 {
-    private const int AI_THRESHOLD    = 60;
+    private const int AI_THRESHOLD    = 45;
     private const int HUMAN_THRESHOLD = 30;
 
     private const array SOURCES = ['human', 'ai-claude', 'ai-gemini', 'ai-chatgpt'];

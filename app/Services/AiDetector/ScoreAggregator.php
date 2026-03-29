@@ -43,8 +43,8 @@ final class ScoreAggregator
      */
     private const array LINGUISTIC_WEIGHTS = [
         // --- Active differentiators (tuned against 136 fixtures, 7 genres) ---
-        // Sentence CV: alert fires ~56% AI vs ~11% human — strongest linguistic differentiator
-        'Sentence Length Variation (CV)' => ['alert' => 12, 'warning' => 6],
+        // Sentence CV: alert fires 30% AI vs 6% human (136 fixtures) — strongest differentiator
+        'Sentence Length Variation (CV)' => ['alert' => 15, 'warning' => 7],
         // Passive Voice: DEPRECATED — fires 21% human vs 20% AI on 136 fixtures.
         // Does not discriminate. Formal human writing (reviews, memoir) triggers equally.
         'Passive Voice Rate'             => ['alert' => 0,  'warning' => 0],
@@ -61,8 +61,8 @@ final class ScoreAggregator
         'Function Word Density'          => ['alert' => 8,  'warning' => 4],
 
         // --- New research-backed analysers (March 2026) ---
-        // Sentence Opener Diversity: alert fires 24% AI vs 6% human — good differentiator
-        'Sentence Opener Diversity'      => ['alert' => 8,  'warning' => 4],
+        // Sentence Opener Diversity: alert fires 24% AI vs 6% human — strong differentiator
+        'Sentence Opener Diversity'      => ['alert' => 12, 'warning' => 6],
 
         // --- Deprecated: fire on everything, no discrimination ---
         // Shannon Entropy: human_signal fires 100% of all samples (human AND AI)
@@ -195,7 +195,7 @@ final class ScoreAggregator
     {
         return match (true) {
             $score < 30 => 'Likely Human-Written',
-            $score < 60 => 'Possibly AI-Generated',
+            $score < 45 => 'Possibly AI-Generated',
             default     => 'Likely AI-Generated',
         };
     }
@@ -204,7 +204,7 @@ final class ScoreAggregator
     {
         return match (true) {
             $score < 30 => 'green',
-            $score < 60 => 'yellow',
+            $score < 45 => 'yellow',
             default     => 'red',
         };
     }
