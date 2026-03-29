@@ -45,9 +45,9 @@ final class ScoreAggregator
         // --- Active differentiators (tuned against 136 fixtures, 7 genres) ---
         // Sentence CV: alert fires ~56% AI vs ~11% human — strongest linguistic differentiator
         'Sentence Length Variation (CV)' => ['alert' => 12, 'warning' => 6],
-        // Passive Voice: low passive = AI signal (Reinhart et al., PNAS 2025)
-        // Reduced from 10: formal human writing (reviews, academic) also triggers
-        'Passive Voice Rate'             => ['alert' => 8,  'warning' => 4],
+        // Passive Voice: DEPRECATED — fires 21% human vs 20% AI on 136 fixtures.
+        // Does not discriminate. Formal human writing (reviews, memoir) triggers equally.
+        'Passive Voice Rate'             => ['alert' => 0,  'warning' => 0],
         // Flesch-Kincaid: fires ~78% AI vs ~56% human — moderate differentiator
         // Reduced from 7 to 5: fires too often on formal human writing (reviews, academic)
         'Flesch-Kincaid Grade Level'     => ['alert' => 5,  'warning' => 2],
@@ -124,11 +124,18 @@ final class ScoreAggregator
      * regularities that characterise AI output.
      */
     private const array BREADTH_BONUS = [
-        0 => -12,   // 0 detectors: strong human signal
-        1 => -8,    // 1 detector: moderate human signal
-        2 => 0,     // 2 detectors: neutral
-        3 => 10,    // 3 detectors: moderate AI signal
-        4 => 16,    // 4+ detectors: strong AI signal (0% human in 136-fixture dataset)
+        // Updated with 136-fixture data (7 genres):
+        //   0 det: 21% human, 15% AI — human signal
+        //   1 det: 38% human, 25% AI — human signal
+        //   2 det: 15% human, 28% AI — slight AI signal
+        //   3 det: 26% human, 19% AI — NOT an AI signal (was +10, now 0)
+        //   4+ det: 0% human, 13% AI — strong AI signal
+        // Must be monotonically increasing: more detectors = higher bonus
+        0 => -12,   // 21% human, 15% AI — human signal
+        1 => -8,    // 38% human, 25% AI — human signal
+        2 => 0,     // 15% human, 28% AI — neutral
+        3 => 0,     // 26% human, 19% AI — neutral (data says not an AI signal)
+        4 => 16,    // 0% human, 13% AI — strong AI signal
     ];
 
     /**

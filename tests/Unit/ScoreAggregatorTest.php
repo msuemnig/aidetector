@@ -95,7 +95,7 @@ final class ScoreAggregatorTest extends TestCase
     public function testMixedConfidencesAreWeightedCorrectly(): void
     {
         // HIGH 10 × 1.0 = 10, MEDIUM 8 × 0.75 = 6, LOW 8 × 0.5 = 4
-        // Raw = 20, breadth bonus for 3 detectors = +10 → 30
+        // Raw = 20, breadth bonus for 3 detectors = 0 → 20
         $score = $this->aggregator->aggregate(
             [
                 $this->makeResult('A', 10, 15, 'HIGH'),
@@ -105,7 +105,7 @@ final class ScoreAggregatorTest extends TestCase
             [],
         );
 
-        $this->assertSame(30, $score, 'Mixed confidence 20 pts + 10 breadth bonus for 3 detectors');
+        $this->assertSame(20, $score, 'Mixed confidence 20 pts + 0 breadth bonus for 3 detectors');
     }
 
     public function testDetectorScoresAreSummedWithHighConfidence(): void
