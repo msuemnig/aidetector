@@ -56,9 +56,10 @@ final class ContractionDetector implements DetectorInterface
         $occurrences = count($found);
         $unique      = array_unique(array_map('mb_strtolower', $found));
 
-        // Negative score: more contractions = more negative (human signal)
-        // -2 per contraction, capped
-        $score = $occurrences > 0 ? max(self::CAP, -2 * $occurrences) : 0;
+        // DEPRECATED: Originally a negative-score human signal, but 136-fixture analysis
+        // showed contractions fire 53% on AI vs 29% on human. AI fiction/memoir uses
+        // contractions freely. Score set to 0 — kept in pipeline for display only.
+        $score = 0;
 
         $wordCount = str_word_count($text);
         $rate      = $wordCount > 0 ? ($occurrences / $wordCount) * 100 : 0.0;

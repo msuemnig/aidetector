@@ -95,8 +95,9 @@ final class ScoreAggregator
         'Function Word Density'          => 7,
         // Epistemic markers: fires ~39% human vs ~13% AI — largest effect size (Herbold 2023)
         'Epistemic Markers'              => 8,
-        // Contractions: fires ~61% human vs ~28% AI
-        'Contraction Usage'              => 6,
+        // Contractions: DEPRECATED — fires 53% AI vs 29% human on 136 fixtures.
+        // AI fiction/memoir uses contractions freely. Subtracting from AI scores hurts detection.
+        // 'Contraction Usage' => 0,
         // Sentence Opener Diversity > 75%: fires ~41% human vs ~24% AI
         'Sentence Opener Diversity'      => 6,
 

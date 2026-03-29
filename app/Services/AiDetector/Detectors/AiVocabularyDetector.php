@@ -21,38 +21,35 @@ final class AiVocabularyDetector implements DetectorInterface
      * Terms and phrases that are characteristic of AI-generated text.
      * Ordered longest-first so multi-word phrases are matched before substrings.
      */
+    /**
+     * Pruned after 136-fixture analysis. Removed terms that fire equally on
+     * human and AI text (legitimate academic vocabulary):
+     *   navigate, robust, nuanced, stakeholders, ecosystem, transformative,
+     *   comprehensive, underscore, foster, in conclusion, to summarise
+     */
     private const array TERMS = [
+        // Multi-word phrases — strongest signals, rarely appear in human text
         'actionable insights',
         'innovative solutions',
         'cutting-edge',
         'game-changer',
         'deep dive',
         'delve into',
-        'navigate',
         'at the end of the day',
         'in today\'s digital landscape',
         'in today\'s world',
         'it is important to note',
         'it is worth noting',
-        'in conclusion',
-        'to summarise',
         'best practices',
-        'stakeholders',
+        // Single words — distinctly AI-favoured, rare in natural writing
         'multifaceted',
-        'transformative',
-        'comprehensive',
         'holistic',
         'paradigm',
-        'ecosystem',
         'leverage',
         'streamline',
         'synergy',
-        'underscore',
-        'nuanced',
         'pivotal',
         'scalable',
-        'foster',
-        'robust',
     ];
 
     /**

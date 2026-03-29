@@ -50,10 +50,23 @@ final class UndueEmphasisDetector implements DetectorInterface
 
     /**
      * Matches ALL CAPS words of 4 or more characters.
-     * The negative lookbehind ensures we do not match at the very start of a sentence
-     * (i.e. preceded by a sentence-ending character + optional whitespace, or at position 0).
      */
     private const string ALL_CAPS_PATTERN = '/(?<![.!?]\s{0,5})(?<!\A)\b([A-Z]{4,})\b/';
+
+    /**
+     * Known acronyms and abbreviations to exclude from ALL CAPS detection.
+     * These are legitimate formatting, not "shouting."
+     */
+    private const array ACRONYM_ALLOWLIST = [
+        'UNFCCC', 'AOSIS', 'NADPH', 'NADP', 'PTSD', 'NASA', 'NATO',
+        'HCUA', 'ICUP', 'HTML', 'HTTP', 'HTTPS', 'JSON', 'AJAX',
+        'IPCC', 'OPEC', 'ASEAN', 'BRICS', 'OECD', 'UNESCO', 'UNICEF',
+        'STEM', 'AIDS', 'LGBTQ', 'ADHD', 'RSVP', 'POTUS', 'SCOTUS',
+        'JPEG', 'MPEG', 'MIDI', 'HDMI', 'WIFI', 'RFID', 'CAPTCHA',
+        'CRUD', 'REST', 'SOAP', 'YAML', 'TOML', 'SMTP', 'IMAP',
+        'INDC', 'INDCS', 'RUBP', 'RUBISCO', 'NDCS', 'PASS', 'FAIL',
+        'CONGRATULATIONS', 'WEATHERWOMAN',
+    ];
 
     /**
      * Analyse the provided text for undue emphasis signals.
@@ -152,11 +165,14 @@ final class UndueEmphasisDetector implements DetectorInterface
             preg_match_all('/\b([A-Z]{4,})\b/', $sentence, $allCapsFound, PREG_OFFSET_CAPTURE);
 
             foreach ($allCapsFound[1] as [$word, $offset]) {
-                // Exclude the very first word of the sentence (offset 0, possibly with leading
-                // punctuation — find the first word-character position).
+                // Exclude the very first word of the sentence
                 $firstWordStart = (int) strspn($sentence, " \t\r\n\"'(");
                 if ($offset === $firstWordStart) {
-                    // This is the first word of the sentence; skip it.
+                    continue;
+                }
+
+                // Exclude known acronyms and abbreviations
+                if (in_array($word, self::ACRONYM_ALLOWLIST, true)) {
                     continue;
                 }
 
