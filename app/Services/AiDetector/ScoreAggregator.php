@@ -42,27 +42,25 @@ final class ScoreAggregator
      *   - Lexical Diversity (TTR): warning fired on ~86% of all samples regardless of source
      */
     private const array LINGUISTIC_WEIGHTS = [
-        // --- Active differentiators (tuned against 136 fixtures, 7 genres) ---
-        // Sentence CV: alert fires 30% AI vs 6% human (136 fixtures) — strongest differentiator
-        'Sentence Length Variation (CV)' => ['alert' => 15, 'warning' => 7],
-        // Passive Voice: DEPRECATED — fires 21% human vs 20% AI on 136 fixtures.
-        // Does not discriminate. Formal human writing (reviews, memoir) triggers equally.
-        'Passive Voice Rate'             => ['alert' => 0,  'warning' => 0],
-        // Flesch-Kincaid: fires ~78% AI vs ~56% human — moderate differentiator
-        // Reduced from 7 to 5: fires too often on formal human writing (reviews, academic)
-        'Flesch-Kincaid Grade Level'     => ['alert' => 5,  'warning' => 2],
-        // Transition Word Rate: overuse is strong AI signal, fires ~11% AI vs 0% human
-        'Transition Word Rate'           => ['alert' => 10, 'warning' => 5],
-        // Punctuation: em-dash/semicolon overuse
-        'Punctuation Pattern'            => ['alert' => 5,  'warning' => 2],
-        // Paragraph uniformity: low CV fires ~65% AI vs ~39% human
-        'Paragraph Length Variance'      => ['alert' => 8,  'warning' => 4],
-        // Function word density: low density fires ~65% AI vs ~28% human
-        'Function Word Density'          => ['alert' => 8,  'warning' => 4],
+        // --- Active differentiators — weights scaled to use full 0-100 range ---
+        // Goal: AI academic text should reach 70-90, human text stays 0-30.
 
-        // --- New research-backed analysers (March 2026) ---
-        // Sentence Opener Diversity: alert fires 24% AI vs 6% human — strong differentiator
-        'Sentence Opener Diversity'      => ['alert' => 12, 'warning' => 6],
+        // Sentence CV: 30% AI vs 6% human — strongest differentiator
+        'Sentence Length Variation (CV)' => ['alert' => 20, 'warning' => 10],
+        // Passive Voice: DEPRECATED — 21% human vs 20% AI. No discrimination.
+        'Passive Voice Rate'             => ['alert' => 0,  'warning' => 0],
+        // Flesch-Kincaid: 78% AI vs 56% human — moderate
+        'Flesch-Kincaid Grade Level'     => ['alert' => 8,  'warning' => 4],
+        // Transition Word Rate: 11% AI vs 0% human — perfect precision
+        'Transition Word Rate'           => ['alert' => 15, 'warning' => 8],
+        // Punctuation: em-dash/semicolon overuse
+        'Punctuation Pattern'            => ['alert' => 8,  'warning' => 4],
+        // Paragraph uniformity: 65% AI vs 39% human
+        'Paragraph Length Variance'      => ['alert' => 12, 'warning' => 6],
+        // Function word density: 65% AI vs 28% human
+        'Function Word Density'          => ['alert' => 12, 'warning' => 6],
+        // Sentence Opener Diversity: 24% AI vs 6% human
+        'Sentence Opener Diversity'      => ['alert' => 16, 'warning' => 8],
 
         // --- Deprecated: fire on everything, no discrimination ---
         // Shannon Entropy: human_signal fires 100% of all samples (human AND AI)
@@ -84,22 +82,20 @@ final class ScoreAggregator
      * including AI text. Provides no discrimination and has been removed.
      */
     private const array HUMAN_SIGNAL_WEIGHTS = [
-        // Tuned against 136 fixtures, 7 genres — human signals must offset AI
-        // linguistic weights to keep human texts below 30 while AI climbs above
+        // Scaled to match increased AI weights — must keep human text in 0-30 range
 
-        // Sentence CV >= 0.65: fires ~33% human vs ~6% AI — strongest human signal
-        'Sentence Length Variation (CV)' => 10,
-        // Paragraph variance: high CV fires ~33% human vs ~6% AI
-        'Paragraph Length Variance'      => 8,
-        // Function word density > 0.50: fires ~22% human vs ~4% AI
-        'Function Word Density'          => 7,
-        // Epistemic markers: fires ~39% human vs ~13% AI — largest effect size (Herbold 2023)
-        'Epistemic Markers'              => 8,
-        // Contractions: DEPRECATED — fires 53% AI vs 29% human on 136 fixtures.
-        // AI fiction/memoir uses contractions freely. Subtracting from AI scores hurts detection.
+        // Sentence CV >= 0.65: 33% human vs 6% AI
+        'Sentence Length Variation (CV)' => 15,
+        // Paragraph variance: 33% human vs 6% AI
+        'Paragraph Length Variance'      => 12,
+        // Function word density > 0.50: 22% human vs 4% AI
+        'Function Word Density'          => 10,
+        // Epistemic markers: 39% human vs 13% AI — largest effect size
+        'Epistemic Markers'              => 12,
+        // Contractions: DEPRECATED — fires more on AI than human.
         // 'Contraction Usage' => 0,
-        // Sentence Opener Diversity > 75%: fires ~41% human vs ~24% AI
-        'Sentence Opener Diversity'      => 6,
+        // Sentence Opener Diversity > 75%: 41% human vs 24% AI
+        'Sentence Opener Diversity'      => 10,
 
         // --- Deprecated: fire on AI too, no discrimination ---
         // 'Shannon Entropy' => 0,
@@ -132,11 +128,11 @@ final class ScoreAggregator
         //   3 det: 26% human, 19% AI — NOT an AI signal (was +10, now 0)
         //   4+ det: 0% human, 13% AI — strong AI signal
         // Must be monotonically increasing: more detectors = higher bonus
-        0 => -12,   // 21% human, 15% AI — human signal
-        1 => -8,    // 38% human, 25% AI — human signal
+        0 => -15,   // 21% human, 15% AI — human signal
+        1 => -10,   // 38% human, 25% AI — human signal
         2 => 0,     // 15% human, 28% AI — neutral
-        3 => 0,     // 26% human, 19% AI — neutral (data says not an AI signal)
-        4 => 16,    // 0% human, 13% AI — strong AI signal
+        3 => 0,     // 26% human, 19% AI — neutral
+        4 => 20,    // 0% human, 13% AI — strong AI signal
     ];
 
     /**

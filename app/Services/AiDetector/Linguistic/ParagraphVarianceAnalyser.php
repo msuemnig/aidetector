@@ -23,8 +23,13 @@ use App\Services\AiDetector\DTOs\LinguisticFactor;
 final class ParagraphVarianceAnalyser
 {
     private const int   MIN_PARAGRAPHS   = 3;
-    private const float HUMAN_THRESHOLD  = 0.50;
-    private const float ALERT_THRESHOLD  = 0.30;
+    // Thresholds tuned against 136-fixture CV distribution:
+    //   CV < 0.12: 0% human vs 21% AI — perfect precision alert
+    //   CV 0.12-0.20: 21% human vs 14% AI — warning zone
+    //   CV > 0.60: 12% human vs 14% AI — no discrimination, human_signal disabled
+    private const float HUMAN_THRESHOLD  = 99.0;  // effectively disabled — 12% vs 14%, no diff
+    private const float WARNING_THRESHOLD = 0.20;
+    private const float ALERT_THRESHOLD  = 0.12;
 
     public function analyse(string $text): LinguisticFactor
     {
@@ -53,9 +58,10 @@ final class ParagraphVarianceAnalyser
         $cv      = $mean > 0 ? $stddev / $mean : 0.0;
 
         $status = match (true) {
-            $cv >= self::HUMAN_THRESHOLD => 'human_signal',
-            $cv >= self::ALERT_THRESHOLD => 'normal',
-            default                      => 'alert',
+            $cv >= self::HUMAN_THRESHOLD   => 'human_signal',
+            $cv >= self::WARNING_THRESHOLD => 'normal',
+            $cv >= self::ALERT_THRESHOLD   => 'warning',
+            default                        => 'alert',
         };
 
         $explanation = sprintf(

@@ -61,35 +61,35 @@ final class ScoreAggregatorTest extends TestCase
 
     public function testHighConfidenceUsesFullScore(): void
     {
-        // 10 × 1.0 = 10, breadth bonus for 1 detector = -8 → 2
+        // 10 × 1.0 = 10, breadth bonus for 1 detector = -10 → 0
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 10, 10, 'HIGH')],
             [],
         );
 
-        $this->assertSame(2, $score, 'HIGH confidence: 10 pts - 8 breadth penalty for single detector');
+        $this->assertSame(0, $score, 'HIGH confidence: 10 pts - 10 breadth penalty → clamped to 0');
     }
 
     public function testMediumConfidenceReducesScore(): void
     {
-        // 8 × 0.75 = 6, breadth bonus for 1 detector = -8 → 0 (clamped)
+        // 8 × 0.75 = 6, breadth bonus for 1 detector = -10 → 0 (clamped)
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 8, 10, 'MEDIUM')],
             [],
         );
 
-        $this->assertSame(0, $score, 'MEDIUM confidence: 6 pts - 8 breadth penalty → clamped to 0');
+        $this->assertSame(0, $score, 'MEDIUM confidence: 6 pts - 10 breadth penalty → clamped to 0');
     }
 
     public function testLowConfidenceHalvesScore(): void
     {
-        // 8 × 0.50 = 4, breadth bonus for 1 detector = -8 → 0 (clamped)
+        // 8 × 0.50 = 4, breadth bonus for 1 detector = -10 → 0 (clamped)
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 8, 10, 'LOW')],
             [],
         );
 
-        $this->assertSame(0, $score, 'LOW confidence: 4 pts - 8 breadth penalty → clamped to 0');
+        $this->assertSame(0, $score, 'LOW confidence: 4 pts - 10 breadth penalty → clamped to 0');
     }
 
     public function testMixedConfidencesAreWeightedCorrectly(): void
@@ -128,70 +128,70 @@ final class ScoreAggregatorTest extends TestCase
 
     public function testLinguisticHighConfidenceAlertAddsCorrectPoints(): void
     {
-        // detector 20 pts + Sentence CV alert 15 pts + breadth(1 det) -8 = 27
+        // detector 20 pts + Sentence CV alert 20 pts + breadth(1 det) -10 = 30
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Sentence Length Variation (CV)', 'alert')],
         );
 
-        $this->assertSame(27, $score, 'Sentence CV alert adds 15 pts (20 + 15 - 8 breadth)');
+        $this->assertSame(30, $score, 'Sentence CV alert adds 20 pts (20 + 20 - 10 breadth)');
     }
 
     public function testLinguisticHighConfidenceWarningAddsCorrectPoints(): void
     {
-        // detector 20 pts + Sentence CV warning 7 pts + breadth(1 det) -8 = 19
+        // detector 20 pts + Sentence CV warning 10 pts + breadth(1 det) -10 = 20
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Sentence Length Variation (CV)', 'warning')],
         );
 
-        $this->assertSame(19, $score);
+        $this->assertSame(20, $score);
     }
 
     public function testLinguisticMediumConfidenceAlertAddsReducedPoints(): void
     {
-        // detector 20 pts + Transition Word alert 10 pts + breadth(1 det) -8 = 22
+        // detector 20 pts + Transition Word alert 15 pts + breadth(1 det) -10 = 25
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Transition Word Rate', 'alert')],
         );
 
-        $this->assertSame(22, $score, 'Transition Word Rate alert adds 10 pts');
+        $this->assertSame(25, $score, 'Transition Word Rate alert adds 15 pts');
     }
 
     public function testLinguisticMediumConfidenceWarningAddsReducedPoints(): void
     {
-        // detector 20 pts + Transition Word warning 5 pts + breadth(1 det) -8 = 17
+        // detector 20 pts + Transition Word warning 8 pts + breadth(1 det) -10 = 18
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Transition Word Rate', 'warning')],
         );
 
-        $this->assertSame(17, $score, 'Transition Word Rate warning adds 5 pts');
+        $this->assertSame(18, $score, 'Transition Word Rate warning adds 8 pts');
     }
 
     public function testLinguisticPunctuationAlertAddsReducedPoints(): void
     {
-        // detector 20 pts + Punctuation alert 5 pts + breadth(1 det) -8 = 17
+        // detector 20 pts + Punctuation alert 8 pts + breadth(1 det) -10 = 18
         $score = $this->aggregator->aggregate(
             [$this->makeResult('A', 20, 20, 'HIGH')],
             [$this->makeFactor('Punctuation Pattern', 'alert')],
         );
 
-        $this->assertSame(17, $score, 'Punctuation Pattern alert adds 5 pts');
+        $this->assertSame(18, $score, 'Punctuation Pattern alert adds 8 pts');
     }
 
     public function testBreadthBonusForZeroDetectors(): void
     {
-        // 0 detectors → -12 breadth penalty, clamped to 0
+        // 0 detectors → -15 breadth penalty, clamped to 0
         $score = $this->aggregator->aggregate([], []);
 
-        $this->assertSame(0, $score, 'Zero detectors: -12 breadth, clamped to 0');
+        $this->assertSame(0, $score, 'Zero detectors: -15 breadth, clamped to 0');
     }
 
     public function testBreadthBonusForFourDetectors(): void
     {
-        // 4 detectors × 2 pts each = 8, breadth bonus +16 = 24
+        // 4 detectors × 2 pts each = 8, breadth bonus +20 = 28
         $score = $this->aggregator->aggregate(
             [
                 $this->makeResult('A', 2, 10, 'HIGH'),
@@ -202,7 +202,7 @@ final class ScoreAggregatorTest extends TestCase
             [],
         );
 
-        $this->assertSame(24, $score, '4 detectors: 8 pts + 16 breadth bonus');
+        $this->assertSame(28, $score, '4 detectors: 8 pts + 20 breadth bonus');
     }
 
     public function testDeprecatedHeuristicContributesZero(): void
