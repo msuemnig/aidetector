@@ -60,6 +60,16 @@ final class ScoreAggregator
         // Function word density: low density fires ~65% AI vs ~28% human
         'Function Word Density'          => ['alert' => 8,  'warning' => 4],
 
+        // --- New research-backed analysers (March 2026) ---
+        // Sentence Opener Diversity: alert fires 24% AI vs 6% human — good differentiator
+        'Sentence Opener Diversity'      => ['alert' => 8,  'warning' => 4],
+
+        // --- Deprecated: fire on everything, no discrimination ---
+        // Shannon Entropy: human_signal fires 100% of all samples (human AND AI)
+        'Shannon Entropy'                => ['alert' => 0,  'warning' => 0],
+        // N-gram Repetition: human_signal fires 100% of all samples (human AND AI)
+        'N-gram Repetition Rate'         => ['alert' => 0,  'warning' => 0],
+
         // --- Deprecated: zero-weighted (fire on everything, no discrimination) ---
         'Lexical Diversity (TTR)'        => ['alert' => 0,  'warning' => 0],
         'Rare Word Rate'                 => ['alert' => 0,  'warning' => 0],
@@ -87,6 +97,12 @@ final class ScoreAggregator
         'Epistemic Markers'              => 8,
         // Contractions: fires ~61% human vs ~28% AI
         'Contraction Usage'              => 6,
+        // Sentence Opener Diversity > 75%: fires ~41% human vs ~24% AI
+        'Sentence Opener Diversity'      => 6,
+
+        // --- Deprecated: fire on AI too, no discrimination ---
+        // 'Shannon Entropy' => 0,
+        // 'N-gram Repetition Rate' => 0,
 
         // --- Deprecated: fires on AI too, no discrimination ---
         // 'Hapax Legomenon Rate' => 0,

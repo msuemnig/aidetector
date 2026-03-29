@@ -27,8 +27,11 @@ use App\Services\AiDetector\Linguistic\LexicalDiversityAnalyser;
 use App\Services\AiDetector\Linguistic\ParagraphVarianceAnalyser;
 use App\Services\AiDetector\Linguistic\PassiveVoiceAnalyser;
 use App\Services\AiDetector\Linguistic\PunctuationAnalyser;
+use App\Services\AiDetector\Linguistic\NgramRepetitionAnalyser;
 use App\Services\AiDetector\Linguistic\RareWordAnalyser;
 use App\Services\AiDetector\Linguistic\SentenceLengthAnalyser;
+use App\Services\AiDetector\Linguistic\SentenceOpenerDiversityAnalyser;
+use App\Services\AiDetector\Linguistic\ShannonEntropyAnalyser;
 use App\Services\AiDetector\Linguistic\TransitionWordAnalyser;
 use App\Services\AiDetector\Linguistic\ZipfAnalyser;
 
@@ -96,6 +99,10 @@ final class AnalysisService
             new HapaxLegomenonAnalyser(),
             new ParagraphVarianceAnalyser(),
             new FunctionWordAnalyser(),
+            // New research-backed analysers (March 2026)
+            new ShannonEntropyAnalyser(),
+            new NgramRepetitionAnalyser(),
+            new SentenceOpenerDiversityAnalyser(),
         ];
 
         $this->aggregator = new ScoreAggregator();
