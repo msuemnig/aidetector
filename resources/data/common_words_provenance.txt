@@ -1,0 +1,14 @@
+Source: Peter Norvig's word frequency list
+URL: http://norvig.com/ngrams/count_1w.txt
+Companion page: http://norvig.com/spell-correct.html
+
+Compiled by Peter Norvig (Director of Research, Google).
+Derived from the Google Web Corpus — approximately 1 trillion words of English text
+crawled from the public web. The original file contains ~333,000 unigrams with raw
+frequency counts, sorted descending by frequency.
+
+This file contains the top 5,000 words by frequency (first column of count_1w.txt),
+one word per line, with the frequency counts stripped.
+
+Downloaded: 2026-03-28
+Extraction command: curl -s http://norvig.com/ngrams/count_1w.txt | head -5000 | awk '{print $1}'
