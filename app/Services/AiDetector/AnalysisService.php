@@ -25,9 +25,12 @@ use App\Services\AiDetector\Detectors\SuperficialAnalysisDetector;
 use App\Services\AiDetector\Detectors\TrailingParticipleDetector;
 use App\Services\AiDetector\Detectors\UndueEmphasisDetector;
 use App\Services\AiDetector\Detectors\VagueAttributionDetector;
+use App\Services\AiDetector\Linguistic\AdjacentSentenceDeltaAnalyser;
 use App\Services\AiDetector\Linguistic\FleschKincaidAnalyser;
 use App\Services\AiDetector\Linguistic\FunctionWordAnalyser;
 use App\Services\AiDetector\Linguistic\HapaxLegomenonAnalyser;
+use App\Services\AiDetector\Linguistic\QuestionFrequencyAnalyser;
+use App\Services\AiDetector\Linguistic\SentenceExtremesAnalyser;
 use App\Services\AiDetector\Linguistic\LexicalDiversityAnalyser;
 use App\Services\AiDetector\Linguistic\ParagraphVarianceAnalyser;
 use App\Services\AiDetector\Linguistic\PassiveVoiceAnalyser;
@@ -114,6 +117,10 @@ final class AnalysisService
             new ShannonEntropyAnalyser(),
             new NgramRepetitionAnalyser(),
             new SentenceOpenerDiversityAnalyser(),
+            // Desaire et al. (2023) — from the 20-feature set achieving >99% accuracy
+            new AdjacentSentenceDeltaAnalyser(),
+            new SentenceExtremesAnalyser(),
+            new QuestionFrequencyAnalyser(),
         ];
 
         $this->aggregator = new ScoreAggregator();

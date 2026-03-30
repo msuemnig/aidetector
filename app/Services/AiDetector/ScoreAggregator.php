@@ -62,6 +62,14 @@ final class ScoreAggregator
         // Sentence Opener Diversity: 24% AI vs 6% human
         'Sentence Opener Diversity'      => ['alert' => 16, 'warning' => 8],
 
+        // --- Desaire et al. (2023) Cell Reports Physical Science — from 20-feature >99% set ---
+        // Adjacent Sentence Delta: DEPRECATED — 0% H vs 2% AI alert, human_signal 65% H vs 59% AI. No discrimination.
+        'Adjacent Sentence Delta'        => ['alert' => 0,  'warning' => 0],
+        // Sentence Extremes Ratio: 12% H vs 26% AI (+14pp) — good AI signal
+        'Sentence Extremes Ratio'        => ['alert' => 10, 'warning' => 5],
+        // Question Frequency: 56% H vs 84% AI (+28pp) — strongest new signal!
+        'Question Frequency'             => ['alert' => 12, 'warning' => 6],
+
         // --- Deprecated: fire on everything, no discrimination ---
         // Shannon Entropy: human_signal fires 100% of all samples (human AND AI)
         'Shannon Entropy'                => ['alert' => 0,  'warning' => 0],
@@ -96,6 +104,12 @@ final class ScoreAggregator
         // 'Contraction Usage' => 0,
         // Sentence Opener Diversity >= 80%: 38% human vs 16% AI (+22pp)
         'Sentence Opener Diversity'      => 10,
+        // Adjacent Sentence Delta: DEPRECATED — 65% H vs 59% AI, no diff
+        // 'Adjacent Sentence Delta' => 0,
+        // Sentence Extremes: DEPRECATED as human signal — 41% H vs 39% AI, no diff
+        // 'Sentence Extremes Ratio' => 0,
+        // Question Frequency >= 10%: 18% H vs 4% AI (+14pp) — good human signal
+        'Question Frequency'             => 8,
 
         // --- Deprecated: fire on AI too, no discrimination ---
         // 'Shannon Entropy' => 0,
