@@ -24,8 +24,11 @@ use App\Services\AiDetector\DTOs\LinguisticFactor;
 final class FunctionWordAnalyser
 {
     private const int   MIN_WORDS        = 50;
-    private const float HUMAN_THRESHOLD  = 0.50;
-    private const float ALERT_THRESHOLD  = 0.42;
+    // Tuned against 136 fixtures:
+    //   < 40%: 12% human vs 33% AI (+21pp gap) — tightened from 42%
+    //   >= 48%: 24% human vs 13% AI (+11pp gap) — tightened from 50%
+    private const float HUMAN_THRESHOLD  = 0.48;
+    private const float ALERT_THRESHOLD  = 0.40;
 
     /** @var array<string, true> */
     private static array $functionWords = [];

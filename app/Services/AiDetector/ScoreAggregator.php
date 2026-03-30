@@ -84,17 +84,17 @@ final class ScoreAggregator
     private const array HUMAN_SIGNAL_WEIGHTS = [
         // Scaled to match increased AI weights — must keep human text in 0-30 range
 
-        // Sentence CV >= 0.65: 33% human vs 6% AI
-        'Sentence Length Variation (CV)' => 15,
-        // Paragraph variance: 33% human vs 6% AI
-        'Paragraph Length Variance'      => 12,
-        // Function word density > 0.50: 22% human vs 4% AI
+        // Sentence CV: DEPRECATED as human signal — 18% human vs 15% AI, no diff
+        // 'Sentence Length Variation (CV)' => 0,
+        // Paragraph variance: DEPRECATED as human signal — 12% vs 14%, no diff
+        // 'Paragraph Length Variance' => 0,
+        // Function word density >= 48%: 24% human vs 13% AI (+11pp)
         'Function Word Density'          => 10,
         // Epistemic markers: 39% human vs 13% AI — largest effect size
         'Epistemic Markers'              => 12,
         // Contractions: DEPRECATED — fires more on AI than human.
         // 'Contraction Usage' => 0,
-        // Sentence Opener Diversity > 75%: 41% human vs 24% AI
+        // Sentence Opener Diversity >= 80%: 38% human vs 16% AI (+22pp)
         'Sentence Opener Diversity'      => 10,
 
         // --- Deprecated: fire on AI too, no discrimination ---

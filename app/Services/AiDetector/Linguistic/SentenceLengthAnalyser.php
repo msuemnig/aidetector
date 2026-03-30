@@ -17,7 +17,8 @@ use App\Services\AiDetector\DTOs\LinguisticFactor;
 final class SentenceLengthAnalyser
 {
     private const int   MIN_WORDS     = 50;
-    private const float HUMAN_CV      = 0.65;  // CV >= 0.65 → strong human signal
+    // Human signal disabled — fires 18% human vs 15% AI at 0.65, no discrimination
+    private const float HUMAN_CV      = 99.0;  // effectively disabled
     private const float NORMAL_CV     = 0.45;
     private const float WARNING_CV    = 0.35;
 

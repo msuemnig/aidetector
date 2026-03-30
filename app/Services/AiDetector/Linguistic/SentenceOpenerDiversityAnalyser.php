@@ -26,8 +26,11 @@ use App\Services\AiDetector\DTOs\LinguisticFactor;
 final class SentenceOpenerDiversityAnalyser
 {
     private const int   MIN_SENTENCES    = 8;
-    private const float HUMAN_THRESHOLD  = 0.75;
-    private const float ALERT_THRESHOLD  = 0.50;
+    // Tuned against 136 fixtures:
+    //   < 60%: 26% human vs 51% AI (+25pp gap) — loosened from 50%
+    //   >= 80%: 38% human vs 16% AI (+22pp gap) — tightened from 75%
+    private const float HUMAN_THRESHOLD  = 0.80;
+    private const float ALERT_THRESHOLD  = 0.60;
 
     public function analyse(string $text): LinguisticFactor
     {
