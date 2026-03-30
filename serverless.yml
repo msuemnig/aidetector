@@ -2,7 +2,7 @@ service: ai-detector
 
 provider:
   name: aws
-  region: us-east-1
+  region: us-east-2
   runtime: provided.al2
   environment:
     APP_ENV: production
