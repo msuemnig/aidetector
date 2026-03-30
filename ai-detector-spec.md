@@ -487,3 +487,25 @@ resources/
 - Use PHP 8.2+ features (readonly classes, constructor property promotion, named arguments) freely
 - All React components should be typed with TypeScript interfaces matching the PHP DTOs
 - Do not add authentication — this is a single-user dev tool
+
+---
+
+## Detectors Tried and Removed (March 2026)
+
+The following detectors were implemented, validated against 136 fixtures across 7 genres,
+and removed because they failed to discriminate between human and AI text:
+
+| Detector | Source | Result | Reason |
+|---|---|---|---|
+| **Dramatic Reframe** ("It's not X — it's Y", "more than just") | tropes.fyi | 18% human vs 4% AI | Fires MORE on human. "More than just" is natural English. Source was based on 2023-era GPT-3.5 patterns. |
+| **Era/World Openers** ("In an era of", "In a world where") | GPTZero vocabulary, Wikipedia Signs of AI | 0% human vs 0% AI | Never fires on topic-constrained writing. May work on generic blog spam but not academic/creative text. |
+| **Contraction Usage** (contractions as human signal) | PNAS 2023 | 29% human vs 53% AI | Fires MORE on AI. AI fiction/memoir uses contractions freely. |
+| **Hapax Legomenon Rate** | Arxiv 2410.12341 | 100% human vs 100% AI | Fires on everything. No discrimination. |
+| **Shannon Entropy** | Venkatraman et al., NAACL 2024 | 100% human vs 100% AI | Fires on everything. No discrimination. |
+| **N-gram Repetition Rate** | EMNLP 2024 | 100% human vs 100% AI | Fires on everything. No discrimination. |
+| **Adverbial Openers** ("Notably,", "Importantly,") | Hastewire, ContentBeta | 0% human vs 2% AI | Too rare to matter. |
+
+**Key lesson:** AI detection research older than 12 months is unreliable. AI companies
+read detection papers and fine-tune models to stop producing identified tells. Structural
+patterns (sentence uniformity, paragraph variance, Rule of Three) are more durable than
+vocabulary-based tells. Always validate empirically against real fixtures.

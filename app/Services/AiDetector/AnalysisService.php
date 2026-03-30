@@ -10,7 +10,6 @@ use App\Services\AiDetector\DTOs\LinguisticFactor;
 use App\Services\AiDetector\Detectors\AdverbialOpenerDetector;
 use App\Services\AiDetector\Detectors\AiVocabularyDetector;
 use App\Services\AiDetector\Detectors\ContractionDetector;
-use App\Services\AiDetector\Detectors\DramaticReframeDetector;
 use App\Services\AiDetector\Detectors\ElegantVariationDetector;
 use App\Services\AiDetector\Detectors\EpistemicMarkerDetector;
 use App\Services\AiDetector\Detectors\EraWorldOpenerDetector;
@@ -91,7 +90,6 @@ final class AnalysisService
             new FormulaicImportanceDetector(),
             new AdverbialOpenerDetector(),
             new GrandioseNounDetector(),
-            new DramaticReframeDetector(),
             new EraWorldOpenerDetector(),
             // Human signal detectors (negative score)
             new EpistemicMarkerDetector(),
