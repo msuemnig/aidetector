@@ -7,17 +7,21 @@ namespace App\Services\AiDetector;
 use App\Services\AiDetector\DTOs\AnalysisReport;
 use App\Services\AiDetector\DTOs\DetectorResult;
 use App\Services\AiDetector\DTOs\LinguisticFactor;
+use App\Services\AiDetector\Detectors\AdverbialOpenerDetector;
 use App\Services\AiDetector\Detectors\AiVocabularyDetector;
 use App\Services\AiDetector\Detectors\ContractionDetector;
 use App\Services\AiDetector\Detectors\ElegantVariationDetector;
 use App\Services\AiDetector\Detectors\EpistemicMarkerDetector;
 use App\Services\AiDetector\Detectors\FalseRangeDetector;
+use App\Services\AiDetector\Detectors\FormulaicImportanceDetector;
+use App\Services\AiDetector\Detectors\GrandioseNounDetector;
 use App\Services\AiDetector\Detectors\NegativeParallelismDetector;
 use App\Services\AiDetector\Detectors\OutlineConclusionDetector;
 use App\Services\AiDetector\Detectors\OvergeneralisationDetector;
 use App\Services\AiDetector\Detectors\PromotionalLanguageDetector;
 use App\Services\AiDetector\Detectors\RuleOfThreeDetector;
 use App\Services\AiDetector\Detectors\SuperficialAnalysisDetector;
+use App\Services\AiDetector\Detectors\TrailingParticipleDetector;
 use App\Services\AiDetector\Detectors\UndueEmphasisDetector;
 use App\Services\AiDetector\Detectors\VagueAttributionDetector;
 use App\Services\AiDetector\Linguistic\FleschKincaidAnalyser;
@@ -80,6 +84,11 @@ final class AnalysisService
             new UndueEmphasisDetector(),
             new PromotionalLanguageDetector(),
             new ElegantVariationDetector(),
+            // New research-backed pattern detectors (March 2026)
+            new TrailingParticipleDetector(),
+            new FormulaicImportanceDetector(),
+            new AdverbialOpenerDetector(),
+            new GrandioseNounDetector(),
             // Human signal detectors (negative score)
             new EpistemicMarkerDetector(),
             new ContractionDetector(),
