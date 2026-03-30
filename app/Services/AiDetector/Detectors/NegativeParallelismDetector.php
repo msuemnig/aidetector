@@ -27,10 +27,14 @@ final class NegativeParallelismDetector implements DetectorInterface
      *
      * @var array<string, string>
      */
+    /**
+     * "both … and" removed after 136-fixture validation: 29% human vs 33% AI,
+     * no discrimination. "Both laughed, and" is normal English.
+     * Remaining patterns: 3% human vs 12% AI (+9pp gap).
+     */
     private const array PATTERNS = [
         'not only … but also' => '/\bnot\s+only\b.{1,120}?\bbut\s+also\b/is',
         'neither … nor'       => '/\bneither\b.{1,120}?\bnor\b/is',
-        'both … and'          => '/\bboth\b.{1,120}?\band\b/is',
     ];
 
     /**
@@ -51,9 +55,9 @@ final class NegativeParallelismDetector implements DetectorInterface
             }
         }
 
-        // DEPRECATED: 29% human vs 33% AI on 136 fixtures — "both...and" is normal
-        // English, not AI-specific. Score zeroed; kept in pipeline for display.
-        $score = 0;
+        // Re-enabled after removing "both...and" pattern. Remaining patterns
+        // ("not only...but also", "neither...nor") show 3% human vs 12% AI.
+        $score = min($occurrences * self::POINTS_PER_OCCURRENCE, self::CAP);
 
         $explanation = $occurrences === 0
             ? 'No formal parallel constructions were detected in the text.'
