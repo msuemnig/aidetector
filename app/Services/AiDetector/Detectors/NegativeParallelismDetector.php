@@ -51,7 +51,9 @@ final class NegativeParallelismDetector implements DetectorInterface
             }
         }
 
-        $score = min($occurrences * self::POINTS_PER_OCCURRENCE, self::CAP);
+        // DEPRECATED: 29% human vs 33% AI on 136 fixtures — "both...and" is normal
+        // English, not AI-specific. Score zeroed; kept in pipeline for display.
+        $score = 0;
 
         $explanation = $occurrences === 0
             ? 'No formal parallel constructions were detected in the text.'

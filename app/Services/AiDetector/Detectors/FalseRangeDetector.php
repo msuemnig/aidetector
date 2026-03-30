@@ -58,7 +58,10 @@ final class FalseRangeDetector implements DetectorInterface
             }
         }
 
-        $score = min($occurrences * self::POINTS_PER_OCCURRENCE, self::CAP);
+        // DEPRECATED: 15% human vs 20% AI on 136 fixtures (+5pp — too weak).
+        // "from X to Y" catches natural expressions like "from one face to another."
+        // Score zeroed; kept in pipeline for display.
+        $score = 0;
 
         $explanation = $occurrences === 0
             ? 'No vague range constructions were detected in the text.'

@@ -59,7 +59,10 @@ final class OutlineConclusionDetector implements DetectorInterface
             $occurrences++;
         }
 
-        $score = min($occurrences * self::POINTS_PER_OCCURRENCE, self::CAP);
+        // DEPRECATED: 12% human vs 17% AI on 136 fixtures (+5pp — too weak).
+        // "Despite X, Y" and "Ultimately," are common in good human writing.
+        // Score zeroed; kept in pipeline for display.
+        $score = 0;
 
         $explanation = $occurrences === 0
             ? 'No formulaic outline or conclusion patterns were detected in the text.'

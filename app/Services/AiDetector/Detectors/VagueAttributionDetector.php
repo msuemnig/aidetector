@@ -87,7 +87,9 @@ final class VagueAttributionDetector implements DetectorInterface
         }
 
         $distinctCount = count($matchedPhraseTypes);
-        $score         = min($distinctCount * self::POINTS_PER_PHRASE_TYPE, self::CAP);
+        // DEPRECATED: 3% human vs 0% AI on 136 fixtures — fires on human only.
+        // Score zeroed; kept in pipeline for display.
+        $score = 0;
 
         $explanation = $distinctCount === 0
             ? 'No unattributed vague attribution phrases were detected in the text.'
