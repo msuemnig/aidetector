@@ -26,3 +26,4 @@ Thumbs.db
 /database/*.sqlite-journal
 /bootstrap/cache/*.php
 /.claude/
+.serverless/

@@ -1,0 +1,136 @@
+service: ai-detector
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: provided.al2
+  environment:
+    APP_ENV: production
+    APP_DEBUG: false
+    APP_KEY: ${ssm:/ai-detector/APP_KEY}
+    APP_URL: ${ssm:/ai-detector/APP_URL}
+    ASSET_URL: ${ssm:/ai-detector/ASSET_URL}
+    LOG_CHANNEL: stderr
+    SESSION_DRIVER: cookie
+    CACHE_DRIVER: array
+    VIEW_COMPILED_PATH: /tmp/storage/framework/views
+
+plugins:
+  - ./vendor/bref/bref
+
+package:
+  patterns:
+    # Include
+    - '!**'
+    - 'app/**'
+    - 'bootstrap/**'
+    - 'config/**'
+    - 'public/index.php'
+    - 'public/.htaccess'
+    - 'resources/data/**'
+    - 'resources/views/**'
+    - 'routes/**'
+    - 'storage/accuracy-report.json'
+    - 'vendor/**'
+    - 'artisan'
+    - 'composer.json'
+    # Exclude
+    - '!vendor/**/tests/**'
+    - '!vendor/**/Tests/**'
+    - '!vendor/**/docs/**'
+    - '!tests/**'
+    - '!node_modules/**'
+    - '!public/build/**'
+    - '!.git/**'
+
+functions:
+  web:
+    handler: public/index.php
+    timeout: 28
+    memorySize: 1024
+    layers:
+      - ${bref:layer.php-84-fpm}
+    events:
+      - httpApi: '*'
+
+resources:
+  Resources:
+    # S3 bucket for static assets (JS, CSS from Vite build)
+    StaticAssetsBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ai-detector-assets-${sls:stage}
+
+    # CloudFront Origin Access Control for S3
+    AssetsBucketOAC:
+      Type: AWS::CloudFront::OriginAccessControl
+      Properties:
+        OriginAccessControlConfig:
+          Name: ai-detector-oac-${sls:stage}
+          OriginAccessControlOriginType: s3
+          SigningBehavior: always
+          SigningProtocol: sigv4
+
+    # S3 bucket policy allowing CloudFront access
+    StaticAssetsBucketPolicy:
+      Type: AWS::S3::BucketPolicy
+      Properties:
+        Bucket: !Ref StaticAssetsBucket
+        PolicyDocument:
+          Statement:
+            - Effect: Allow
+              Principal:
+                Service: cloudfront.amazonaws.com
+              Action: s3:GetObject
+              Resource: !Sub '${StaticAssetsBucket.Arn}/*'
+              Condition:
+                StringEquals:
+                  AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution}'
+
+    # CloudFront distribution
+    CloudFrontDistribution:
+      Type: AWS::CloudFront::Distribution
+      Properties:
+        DistributionConfig:
+          Enabled: true
+          PriceClass: PriceClass_100
+          HttpVersion: http2and3
+          DefaultCacheBehavior:
+            # Default: forward to Lambda (API Gateway)
+            TargetOriginId: LambdaOrigin
+            ViewerProtocolPolicy: redirect-to-https
+            AllowedMethods: [GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE]
+            CachedMethods: [GET, HEAD]
+            CachePolicyId: '4135ea2d-6df8-44a3-9df3-4b5a84be39ad'  # CachingDisabled
+            OriginRequestPolicyId: 'b689b0a8-53d0-40ab-baf2-68738e2966ac'  # AllViewerExceptHostHeader
+            Compress: true
+          CacheBehaviors:
+            # Static assets from S3 — cache aggressively
+            - PathPattern: '/build/*'
+              TargetOriginId: S3Origin
+              ViewerProtocolPolicy: redirect-to-https
+              AllowedMethods: [GET, HEAD]
+              CachedMethods: [GET, HEAD]
+              CachePolicyId: '658327ea-f89d-4fab-a63d-7e88639e58f6'  # CachingOptimized
+              Compress: true
+          Origins:
+            - Id: LambdaOrigin
+              DomainName: !Select [1, !Split ['://', !GetAtt HttpApi.ApiEndpoint]]
+              CustomOriginConfig:
+                OriginProtocolPolicy: https-only
+            - Id: S3Origin
+              DomainName: !GetAtt StaticAssetsBucket.RegionalDomainName
+              OriginAccessControlId: !GetAtt AssetsBucketOAC.Id
+              S3OriginConfig:
+                OriginAccessIdentity: ''
+
+  Outputs:
+    CloudFrontDomain:
+      Description: CloudFront distribution domain — create your CNAME pointing here
+      Value: !GetAtt CloudFrontDistribution.DomainName
+    CloudFrontDistributionId:
+      Description: CloudFront distribution ID (for cache invalidation)
+      Value: !Ref CloudFrontDistribution
+    AssetsBucketName:
+      Description: S3 bucket for static assets
+      Value: !Ref StaticAssetsBucket
