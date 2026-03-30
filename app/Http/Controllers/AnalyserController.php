@@ -26,7 +26,15 @@ final class AnalyserController extends Controller
 
     public function testing(AccuracyReportService $reportService): Response
     {
-        $data = Cache::remember('accuracy-report-v1', 3600, fn () => $reportService->generate());
+        $staticPath = storage_path('accuracy-report.json');
+
+        if (file_exists($staticPath)) {
+            // Production: read pre-computed file (built by php artisan accuracy:export)
+            $data = json_decode((string) file_get_contents($staticPath), true);
+        } else {
+            // Local dev: compute live with 1-hour cache
+            $data = Cache::remember('accuracy-report-v1', 3600, fn () => $reportService->generate());
+        }
 
         return Inertia::render('Testing', [
             'report' => $data,

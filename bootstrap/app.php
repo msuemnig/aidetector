@@ -12,6 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withCommands([
         \App\Console\Commands\AccuracyReport::class,
+        \App\Console\Commands\AccuracyExport::class,
     ])
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web(append: [

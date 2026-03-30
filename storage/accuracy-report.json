@@ -1,0 +1,4056 @@
+{
+    "rows": [
+        {
+            "id": "human-review-02-heretic",
+            "source": "human",
+            "label": "human",
+            "topic": "Film review of Heretic (2024) — Hugh Grant delivers but the ending falters",
+            "score": 43,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [],
+            "wordCount": 287
+        },
+        {
+            "id": "human-review-01-imaginary",
+            "source": "human",
+            "label": "human",
+            "topic": "Film review of Imaginary (2024) — lacks imagination despite interesting premise",
+            "score": 36,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 691
+        },
+        {
+            "id": "human-cop21-10-implementation",
+            "source": "human",
+            "label": "human",
+            "topic": "The road to implementation — challenges ahead",
+            "score": 33,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [],
+            "wordCount": 254
+        },
+        {
+            "id": "human-technical-04-git",
+            "source": "human",
+            "label": "human",
+            "topic": "Git and GitHub tutorial for beginners — version control basics",
+            "score": 26,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 741
+        },
+        {
+            "id": "human-cop21-01-overview",
+            "source": "human",
+            "label": "human",
+            "topic": "COP21 overview",
+            "score": 23,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 301
+        },
+        {
+            "id": "human-cop21-08-enforcement-gap",
+            "source": "human",
+            "label": "human",
+            "topic": "The enforcement gap — NDCs are not legally binding",
+            "score": 23,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 194
+        },
+        {
+            "id": "human-technical-01-photosynthesis",
+            "source": "human",
+            "label": "human",
+            "topic": "How photosynthesis works — light reactions and Calvin cycle explained",
+            "score": 23,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 668
+        },
+        {
+            "id": "human-memoir-02-jiaozi",
+            "source": "human",
+            "label": "human",
+            "topic": "A Chinese-American adoptee’s relationship with dumplings as a thread through identity",
+            "score": 18,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 5,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 711
+        },
+        {
+            "id": "human-opinion-02-harvard-ai",
+            "source": "human",
+            "label": "human",
+            "topic": "Arguing Harvard should integrate AI education into the undergraduate curriculum",
+            "score": 16,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 527
+        },
+        {
+            "id": "human-review-04-orbital",
+            "source": "human",
+            "label": "human",
+            "topic": "Book review of Orbital by Samantha Harvey — 2024 Booker Prize winner",
+            "score": 15,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 642
+        },
+        {
+            "id": "human-opinion-01-harvard-king",
+            "source": "human",
+            "label": "human",
+            "topic": "Satirical argument that Harvard student government should be replaced with a monarchy",
+            "score": 8,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 4,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 744
+        },
+        {
+            "id": "human-technical-02-bread",
+            "source": "human",
+            "label": "human",
+            "topic": "The chemistry of bread-making — gluten, yeast, and the Maillard reaction",
+            "score": 8,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 1302
+        },
+        {
+            "id": "human-cop21-04-climate-finance",
+            "source": "human",
+            "label": "human",
+            "topic": "Developing nations and the $100 billion climate finance pledge",
+            "score": 5,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 266
+        },
+        {
+            "id": "human-cop21-03-final-agreement",
+            "source": "human",
+            "label": "human",
+            "topic": "What the final Paris Agreement contains",
+            "score": 3,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 265
+        },
+        {
+            "id": "human-cop21-07-ngo-reaction",
+            "source": "human",
+            "label": "human",
+            "topic": "Environmental groups' reaction to the deal",
+            "score": 3,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 216
+        },
+        {
+            "id": "human-opinion-04-penn-freespeech",
+            "source": "human",
+            "label": "human",
+            "topic": "Students should openly express their political views and engage in debate on campus",
+            "score": 3,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 704
+        },
+        {
+            "id": "human-memoir-01-dust",
+            "source": "human",
+            "label": "human",
+            "topic": "A woman’s day told in clock-ticks — killing a squirrel, dusting the house, discovering her husband has died",
+            "score": 1,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 736
+        },
+        {
+            "id": "human-cop21-02-temperature-targets",
+            "source": "human",
+            "label": "human",
+            "topic": "1.5°C vs 2°C temperature target debate",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 260
+        },
+        {
+            "id": "human-cop21-05-us-position",
+            "source": "human",
+            "label": "human",
+            "topic": "The US position and Obama's role",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 308
+        },
+        {
+            "id": "human-cop21-06-china-role",
+            "source": "human",
+            "label": "human",
+            "topic": "China's role as the world's largest emitter",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 230
+        },
+        {
+            "id": "human-cop21-09-business-reaction",
+            "source": "human",
+            "label": "human",
+            "topic": "Business and industry reaction to the Paris Agreement",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 243
+        },
+        {
+            "id": "human-fiction-01-algorithms",
+            "source": "human",
+            "label": "human",
+            "topic": "A lifestyle app that tells people what to do gains cultish popularity",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 771
+        },
+        {
+            "id": "human-fiction-02-tartarus",
+            "source": "human",
+            "label": "human",
+            "topic": "Prisoners sentenced to eternal life are orbited around a planet in spacesuits",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 535
+        },
+        {
+            "id": "human-fiction-03-daytenthousand",
+            "source": "human",
+            "label": "human",
+            "topic": "A man cloned from 10000-year-old DNA on a space station discovers his origins",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 677
+        },
+        {
+            "id": "human-fiction-04-saint",
+            "source": "human",
+            "label": "human",
+            "topic": "An alien scholar in an underground cave society must undertake a pilgrimage to eat",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 749
+        },
+        {
+            "id": "human-memoir-03-i-hear-you",
+            "source": "human",
+            "label": "human",
+            "topic": "Men who confide their trauma to a stranger — loneliness and male vulnerability",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 478
+        },
+        {
+            "id": "human-memoir-04-return-journey",
+            "source": "human",
+            "label": "human",
+            "topic": "A father with Parkinson’s collapses the night of a SpaceX rocket launch",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 673
+        },
+        {
+            "id": "human-opinion-03-penn-face",
+            "source": "human",
+            "label": "human",
+            "topic": "The competitive pressure at UPenn causes students to lose their personal identity",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 807
+        },
+        {
+            "id": "human-personal-01-conquering",
+            "source": "human",
+            "label": "human",
+            "topic": "Overcoming fear of public speaking to become student body president",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 653
+        },
+        {
+            "id": "human-personal-02-splash-of-color",
+            "source": "human",
+            "label": "human",
+            "topic": "Finding confidence through becoming a school weather reporter",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 651
+        },
+        {
+            "id": "human-personal-03-nancy",
+            "source": "human",
+            "label": "human",
+            "topic": "Learning to appreciate family responsibilities as the oldest daughter in an African household",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 634
+        },
+        {
+            "id": "human-personal-04-every-woman",
+            "source": "human",
+            "label": "human",
+            "topic": "Identity shaped by relationships with women — sister, exchange students, a Ukrainian refugee",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 659
+        },
+        {
+            "id": "human-review-03-the-return",
+            "source": "human",
+            "label": "human",
+            "topic": "Film review of The Return (2024) — a classical antiquity drama with Ralph Fiennes",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [],
+            "wordCount": 557
+        },
+        {
+            "id": "human-technical-03-unit-testing",
+            "source": "human",
+            "label": "human",
+            "topic": "How to start unit testing JavaScript code with Jest",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 963
+        },
+        {
+            "id": "ai-claude-cop21-03-final-agreement",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "What the final Paris Agreement actually contains",
+            "score": 70,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 417
+        },
+        {
+            "id": "ai-claude-cop21-06-china-role",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "China's participation as the world's largest emitter",
+            "score": 60,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 442
+        },
+        {
+            "id": "ai-claude-cop21-09-business-reaction",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Business and industry reaction to the Paris Agreement",
+            "score": 59,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 418
+        },
+        {
+            "id": "ai-claude-cop21-01-overview",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "What COP21 is and why Paris",
+            "score": 56,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 406
+        },
+        {
+            "id": "ai-claude-cop21-02-temperature-targets",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "The 1.5 vs 2 degree temperature target debate",
+            "score": 55,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 412
+        },
+        {
+            "id": "ai-claude-cop21-04-climate-finance",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Developing nations and the $100 billion climate finance pledge",
+            "score": 51,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 416
+        },
+        {
+            "id": "ai-claude-cop21-10-implementation",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "The road to implementation — challenges ahead",
+            "score": 43,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 398
+        },
+        {
+            "id": "ai-claude-technical-01-photosynthesis",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "How photosynthesis works — light reactions and Calvin cycle",
+            "score": 39,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 578
+        },
+        {
+            "id": "ai-claude-cop21-05-us-position",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "The US position and Obama's role",
+            "score": 37,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 418
+        },
+        {
+            "id": "ai-claude-cop21-08-enforcement-gap",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "The enforcement gap — NDCs are not legally binding",
+            "score": 37,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 447
+        },
+        {
+            "id": "ai-claude-review-03-classical-drama",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Review of a classical drama adaptation of Homer's Odyssey",
+            "score": 35,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 601
+        },
+        {
+            "id": "ai-claude-technical-02-bread",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "The chemistry of bread-making — gluten, yeast, and Maillard reaction",
+            "score": 33,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 578
+        },
+        {
+            "id": "ai-claude-fiction-04-saint",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "An alien scholar in an underground cave society must undertake a pilgrimage to eat",
+            "score": 32,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 718
+        },
+        {
+            "id": "ai-claude-technical-04-git",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Git version control tutorial for beginners",
+            "score": 32,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 4,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 600
+        },
+        {
+            "id": "ai-claude-review-04-space-novel",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Review of a short experimental novel set on the International Space Station",
+            "score": 30,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 609
+        },
+        {
+            "id": "ai-claude-cop21-07-ngo-reaction",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Environmental organisations' reaction to the deal",
+            "score": 21,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 415
+        },
+        {
+            "id": "ai-claude-fiction-01-algorithms",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "A lifestyle app that tells people what to do gains cultish popularity",
+            "score": 21,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Undue Emphasis",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 729
+        },
+        {
+            "id": "ai-claude-memoir-01-dust",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "A woman's day told in clock-ticks — discovering her husband has died",
+            "score": 21,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 632
+        },
+        {
+            "id": "ai-claude-opinion-02-ai-education",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Arguing a university should integrate AI education into the undergraduate curriculum",
+            "score": 19,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 628
+        },
+        {
+            "id": "ai-claude-review-01-horror-film",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Review of a horror film about sinister imaginary friends that lacks imagination",
+            "score": 17,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Undue Emphasis",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 580
+        },
+        {
+            "id": "ai-claude-review-02-psychological-horror",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Review of a psychological horror film with Hugh Grant as a sinister intellectual",
+            "score": 17,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 585
+        },
+        {
+            "id": "ai-claude-fiction-02-tartarus",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Prisoners sentenced to eternal life are orbited around a planet in spacesuits",
+            "score": 13,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 632
+        },
+        {
+            "id": "ai-claude-memoir-02-jiaozi",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "A Chinese-American adoptee's relationship with dumplings as identity",
+            "score": 11,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 634
+        },
+        {
+            "id": "ai-claude-memoir-04-return-journey",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "A father with Parkinson's collapses the night of a rocket launch",
+            "score": 10,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 617
+        },
+        {
+            "id": "ai-claude-fiction-03-daytenthousand",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "A man cloned from 10000-year-old DNA on a space station discovers his origins",
+            "score": 8,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 699
+        },
+        {
+            "id": "ai-claude-opinion-04-political-speech",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Students should openly express their political views and engage in debate on campus",
+            "score": 7,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 585
+        },
+        {
+            "id": "ai-claude-memoir-03-i-hear-you",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Men who confide their trauma to you — loneliness and male vulnerability",
+            "score": 6,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 543
+        },
+        {
+            "id": "ai-claude-personal-03-family-responsibility",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Learning to appreciate family responsibilities as the oldest daughter in an immigrant household",
+            "score": 6,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 619
+        },
+        {
+            "id": "ai-claude-technical-03-unit-testing",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "How to start unit testing JavaScript code",
+            "score": 4,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 646
+        },
+        {
+            "id": "ai-claude-opinion-03-competitive-culture",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "The competitive pressure at an elite university causes students to lose their personal identity",
+            "score": 3,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 602
+        },
+        {
+            "id": "ai-claude-opinion-01-student-gov",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Satirical argument that university student government should be replaced with a monarchy",
+            "score": 1,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 660
+        },
+        {
+            "id": "ai-claude-personal-01-public-speaking",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Overcoming fear of public speaking to become student body president",
+            "score": 1,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 591
+        },
+        {
+            "id": "ai-claude-personal-02-unexpected-activity",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Finding confidence through an unexpected extracurricular activity",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 634
+        },
+        {
+            "id": "ai-claude-personal-04-women-identity",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Identity shaped by relationships with women — sister, exchange students, a refugee friend",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 642
+        },
+        {
+            "id": "ai-gemini-cop21-10-implementation",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The road to implementation — challenges ahead",
+            "score": 95,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 426
+        },
+        {
+            "id": "ai-gemini-cop21-01-overview",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "What COP21 is and why Paris",
+            "score": 91,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 401
+        },
+        {
+            "id": "ai-gemini-review-04-space-novel",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Review of a short experimental novel set on the International Space Station",
+            "score": 86,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 562
+        },
+        {
+            "id": "ai-gemini-review-02-psychological-horror",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Review of a psychological horror film with Hugh Grant as a sinister intellectual",
+            "score": 85,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 550
+        },
+        {
+            "id": "ai-gemini-cop21-07-ngo-reaction",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Environmental organisations' reaction to the deal",
+            "score": 78,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Undue Emphasis",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 427
+        },
+        {
+            "id": "ai-gemini-opinion-ai-education",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Arguing a university should integrate AI education into the undergraduate curriculum",
+            "score": 76,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 645
+        },
+        {
+            "id": "ai-gemini-cop21-03-final-agreement",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "What the final Paris Agreement actually contains",
+            "score": 74,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 407
+        },
+        {
+            "id": "ai-gemini-cop21-04-climate-finance",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Developing nations and the $100 billion climate finance pledge",
+            "score": 74,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 406
+        },
+        {
+            "id": "ai-gemini-technical-02-bread",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The chemistry of bread-making — gluten, yeast, and Maillard reaction",
+            "score": 73,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 6,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 512
+        },
+        {
+            "id": "ai-gemini-fiction-tartarus",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Prisoners sentenced to eternal life are orbited around a planet in spacesuits",
+            "score": 72,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 522
+        },
+        {
+            "id": "ai-gemini-technical-01-photosynthesis",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "How photosynthesis works — light reactions and Calvin cycle",
+            "score": 71,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 503
+        },
+        {
+            "id": "ai-gemini-cop21-02-temperature-targets",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The 1.5 vs 2 degree temperature target debate",
+            "score": 68,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 402
+        },
+        {
+            "id": "ai-gemini-review-03-classical-drama",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Review of a classical drama adaptation of Homer's Odyssey",
+            "score": 67,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 557
+        },
+        {
+            "id": "ai-gemini-review-01-horror-film",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Review of a horror film about sinister imaginary friends that lacks imagination",
+            "score": 66,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 576
+        },
+        {
+            "id": "ai-gemini-cop21-09-business-reaction",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Business and industry reaction to the Paris Agreement",
+            "score": 63,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 419
+        },
+        {
+            "id": "ai-gemini-cop21-06-china-role",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "China's participation as the world's largest emitter",
+            "score": 57,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 409
+        },
+        {
+            "id": "ai-gemini-technical-04-git",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Git version control tutorial for beginners",
+            "score": 51,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 513
+        },
+        {
+            "id": "ai-gemini-cop21-08-enforcement-gap",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The enforcement gap — NDCs are not legally binding",
+            "score": 50,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 437
+        },
+        {
+            "id": "ai-gemini-opinion-political-speech",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Students should openly express their political views and engage in debate on campus",
+            "score": 48,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 688
+        },
+        {
+            "id": "ai-gemini-personal-04-women-identity",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Identity shaped by relationships with women — sister, exchange students, a refugee friend",
+            "score": 46,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 514
+        },
+        {
+            "id": "ai-gemini-cop21-05-us-position",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The US position and Obama's role",
+            "score": 44,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 415
+        },
+        {
+            "id": "ai-gemini-technical-03-unit-testing",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "How to start unit testing JavaScript code",
+            "score": 29,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 525
+        },
+        {
+            "id": "ai-gemini-memoir-01-dust",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "A woman's day told in clock-ticks — discovering her husband has died",
+            "score": 23,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 618
+        },
+        {
+            "id": "ai-gemini-opinion-student-gov",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Satirical argument that university student government should be replaced with a monarchy",
+            "score": 22,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 672
+        },
+        {
+            "id": "ai-gemini-fiction-algorithms",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "A lifestyle app that tells people what to do gains cultish popularity",
+            "score": 21,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 4,
+                    "cap": 15,
+                    "occurrences": 2,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Elegant Variation",
+                    "score": 4,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 612
+        },
+        {
+            "id": "ai-gemini-fiction-saint",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "An alien scholar in an underground cave society must undertake a pilgrimage to eat",
+            "score": 20,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 656
+        },
+        {
+            "id": "ai-gemini-personal-01-public-speaking",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Overcoming fear of public speaking to become student body president",
+            "score": 20,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 517
+        },
+        {
+            "id": "ai-gemini-memoir-02-jiaozi",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "A Chinese-American adoptee's relationship with dumplings as identity",
+            "score": 13,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 588
+        },
+        {
+            "id": "ai-gemini-memoir-03-i-hear-you",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Men who confide their trauma to you — loneliness and male vulnerability",
+            "score": 13,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 607
+        },
+        {
+            "id": "ai-gemini-personal-02-unexpected-activity",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Finding confidence through an unexpected extracurricular activity",
+            "score": 13,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 522
+        },
+        {
+            "id": "ai-gemini-opinion-competitive-culture",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The competitive pressure at an elite university causes students to lose their personal identity",
+            "score": 10,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 5,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 724
+        },
+        {
+            "id": "ai-gemini-personal-03-family-responsibility",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "Learning to appreciate family responsibilities as the oldest daughter in an immigrant household",
+            "score": 9,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 513
+        },
+        {
+            "id": "ai-gemini-fiction-daytenthousand",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "A man cloned from 10000-year-old DNA on a space station discovers his origins",
+            "score": 6,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 612
+        },
+        {
+            "id": "ai-gemini-memoir-04-return-journey",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "A father with Parkinson's collapses the night of a rocket launch",
+            "score": 1,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 561
+        },
+        {
+            "id": "ai-chatgpt-review-03-classical-drama",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Review of a classical drama adaptation of Homer's Odyssey",
+            "score": 86,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 6,
+                    "cap": 12,
+                    "occurrences": 2,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 499
+        },
+        {
+            "id": "ai-chatgpt-technical-02-bread",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "The chemistry of bread-making — gluten, yeast, and Maillard reaction",
+            "score": 84,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 4,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 481
+        },
+        {
+            "id": "ai-chatgpt-cop21-01-overview",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "What COP21 is and why Paris",
+            "score": 77,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 292
+        },
+        {
+            "id": "ai-chatgpt-cop21-02-temperature-targets",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "The 1.5°C vs 2°C temperature target debate",
+            "score": 73,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Overgeneralisation",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 287
+        },
+        {
+            "id": "ai-chatgpt-cop21-03-final-agreement",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "What the final Paris Agreement actually contains",
+            "score": 65,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Elegant Variation",
+                    "score": 4,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 275
+        },
+        {
+            "id": "ai-chatgpt-review-02-psychological-horror",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Review of a psychological horror film with Hugh Grant as a sinister intellectual",
+            "score": 64,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 559
+        },
+        {
+            "id": "ai-chatgpt-cop21-10-implementation",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "The road to implementation",
+            "score": 63,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 270
+        },
+        {
+            "id": "ai-chatgpt-cop21-09-business-reaction",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Business and industry reaction",
+            "score": 60,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 265
+        },
+        {
+            "id": "ai-chatgpt-technical-01-photosynthesis",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "How photosynthesis works — light reactions and Calvin cycle",
+            "score": 60,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 600
+        },
+        {
+            "id": "ai-chatgpt-cop21-04-climate-finance",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Developing nations and the $100 billion climate finance pledge",
+            "score": 57,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 282
+        },
+        {
+            "id": "ai-chatgpt-cop21-07-ngo-reaction",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Environmental groups' reaction",
+            "score": 49,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Trailing Participle",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 261
+        },
+        {
+            "id": "ai-chatgpt-cop21-06-china-role",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "China's participation as the world's largest emitter",
+            "score": 48,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Trailing Participle",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 261
+        },
+        {
+            "id": "ai-chatgpt-technical-03-unit-testing",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "How to start unit testing JavaScript code",
+            "score": 48,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 474
+        },
+        {
+            "id": "ai-chatgpt-review-04-space-novel",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Review of a short experimental novel set on the International Space Station",
+            "score": 47,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 3,
+                    "cap": 12,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 463
+        },
+        {
+            "id": "ai-chatgpt-opinion-02-ai-education",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Arguing a university should integrate AI education into the undergraduate curriculum",
+            "score": 46,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 600
+        },
+        {
+            "id": "ai-chatgpt-cop21-05-us-position",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "The US position and Obama's role",
+            "score": 40,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 267
+        },
+        {
+            "id": "ai-chatgpt-opinion-04-political-speech",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Students should openly express their political views and engage in debate on campus",
+            "score": 40,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 663
+        },
+        {
+            "id": "ai-chatgpt-personal-03-family-responsibility",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Learning to appreciate family responsibilities as the oldest daughter in an immigrant household",
+            "score": 37,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 453
+        },
+        {
+            "id": "ai-chatgpt-personal-02-unexpected-activity",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Finding confidence through an unexpected extracurricular activity",
+            "score": 33,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 6,
+                    "cap": 10,
+                    "occurrences": 2,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 475
+        },
+        {
+            "id": "ai-chatgpt-fiction-02-tartarus",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Prisoners sentenced to eternal life are orbited around a planet in spacesuits",
+            "score": 30,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 4,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 535
+        },
+        {
+            "id": "ai-chatgpt-cop21-08-enforcement-gap",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "The enforcement gap — no binding targets",
+            "score": 22,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 273
+        },
+        {
+            "id": "ai-chatgpt-review-01-horror-film",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Review of a horror film about sinister imaginary friends that lacks imagination",
+            "score": 21,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Overgeneralisation",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 584
+        },
+        {
+            "id": "ai-chatgpt-personal-04-women-identity",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Identity shaped by relationships with women — sister, exchange students, a refugee friend",
+            "score": 16,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 485
+        },
+        {
+            "id": "ai-chatgpt-technical-04-git",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Git version control tutorial for beginners",
+            "score": 14,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 474
+        },
+        {
+            "id": "ai-chatgpt-memoir-01-dust",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "A woman's day told in clock-ticks — discovering her husband has died",
+            "score": 13,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 734
+        },
+        {
+            "id": "ai-chatgpt-personal-01-public-speaking",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Overcoming fear of public speaking to become student body president",
+            "score": 13,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 492
+        },
+        {
+            "id": "ai-chatgpt-memoir-02-jiaozi",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "A Chinese-American adoptee's relationship with dumplings as identity",
+            "score": 11,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 552
+        },
+        {
+            "id": "ai-chatgpt-memoir-04-return-journey",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "A father with Parkinson's collapses the night of a rocket launch",
+            "score": 9,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 478
+        },
+        {
+            "id": "ai-chatgpt-fiction-03-daytenthousand",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "A man cloned from 10000-year-old DNA on a space station discovers his origins",
+            "score": 6,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 10,
+                    "cap": 10,
+                    "occurrences": 4,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 864
+        },
+        {
+            "id": "ai-chatgpt-memoir-03-i-hear-you",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Men who confide their trauma to you — loneliness and male vulnerability",
+            "score": 2,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 554
+        },
+        {
+            "id": "ai-chatgpt-fiction-01-algorithms",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "A lifestyle app that tells people what to do gains cultish popularity",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 995
+        },
+        {
+            "id": "ai-chatgpt-fiction-04-saint",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "An alien scholar in an underground cave society must undertake a pilgrimage to eat",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 2,
+                    "cap": 8,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "wordCount": 862
+        },
+        {
+            "id": "ai-chatgpt-opinion-01-student-gov",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "Satirical argument that university student government should be replaced with a monarchy",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [],
+            "wordCount": 686
+        },
+        {
+            "id": "ai-chatgpt-opinion-03-competitive-culture",
+            "source": "ai-chatgpt",
+            "label": "ai",
+            "topic": "The competitive pressure at an elite university causes students to lose their personal identity",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "topDetectors": [
+                {
+                    "category": "Rule of Three",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 3,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "confidence": "HIGH"
+                }
+            ],
+            "wordCount": 635
+        }
+    ],
+    "samples": [
+        {
+            "id": "human-cop21-02-temperature-targets",
+            "source": "human",
+            "label": "human",
+            "topic": "1.5°C vs 2°C temperature target debate",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "pass",
+            "wordCount": 260,
+            "text": "Initially championed by small island states (AOSIS), the push to include the 1.5°C target more prominently in the Paris agreement achieved surprising progress. While the 2°C global temperature limitation goal was adopted with difficulty at Copenhagen in 2009, demanding increased ambition seemed unrealistic to many. This issue represents a scientifically and politically characteristic node within the climate regime.\n\nNumerous studies demonstrate that the 2°C target itself is becoming unreachable, as it would require extremely profound economic and social transformations starting today. However, national commitments submitted for COP — the \"nationally determined contributions\" or NDCs — revealed this radical trajectory was not being followed. Even if these commitments were genuinely implemen…",
+            "detectorResults": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 0,
+                    "cap": 15,
+                    "occurrences": 0,
+                    "explanation": "No AI vocabulary terms were detected in the text.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No rule-of-three patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formal parallel constructions were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Outline & Conclusion Patterns",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formulaic outline or conclusion patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "False Range",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No vague range constructions were detected in the text.",
+                    "confidence": "LOW"
+                },
+                {
+                    "category": "Vague Attribution",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No unattributed vague attribution phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Superficial Analysis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No superficial analysis phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Overgeneralisation",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No overgeneralisation phrases were detected in the text.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No undue emphasis signals were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Promotional Language",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No promotional language phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Elegant Variation",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No synonym clusters with 3 or more distinct members were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No trailing participle clauses were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No formulaic importance phrases were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Adverbial Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No adverbial sentence openers were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No grandiose metaphorical nouns were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Era\/World Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No cliché era\/world opening formulas were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Epistemic Markers",
+                    "score": 0,
+                    "cap": -8,
+                    "occurrences": 0,
+                    "explanation": "No epistemic markers (hedging, uncertainty, personal belief) were found. AI text typically lacks these markers entirely.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Contraction Usage",
+                    "score": 0,
+                    "cap": -6,
+                    "occurrences": 0,
+                    "explanation": "No contractions were found. AI text tends to use expanded forms (\"do not\" instead of \"don't\").",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "linguisticFactors": [
+                {
+                    "label": "Lexical Diversity (TTR)",
+                    "rawValue": 0.6897810218978102,
+                    "displayValue": "69.0%",
+                    "status": "normal",
+                    "explanation": "The Type-Token Ratio is 69.0% (189 unique words out of 274 total). A TTR between 60% and 85% is typical of natural, varied writing. This text falls within the expected range, suggesting healthy vocabulary variety."
+                },
+                {
+                    "label": "Sentence Length Variation (CV)",
+                    "rawValue": 0.4657500154837109,
+                    "displayValue": "46.6%",
+                    "status": "normal",
+                    "explanation": "The Coefficient of Variation for sentence length is 46.6% across 14 sentences (mean: 18.6 words per sentence). A CV of 45% or above is typical of natural human writing. This text shows healthy variation in sentence length."
+                },
+                {
+                    "label": "Passive Voice Rate",
+                    "rawValue": 28.57142857142857,
+                    "displayValue": "28.6%",
+                    "status": "normal",
+                    "explanation": "4 of 14 sentences (28.6%) contain passive voice constructions. Passive voice usage is at a rate typical of human writing."
+                },
+                {
+                    "label": "Transition Word Rate",
+                    "rawValue": 0,
+                    "displayValue": "0.0%",
+                    "status": "normal",
+                    "explanation": "0 of 14 sentences (0.0%) contain a formal transition word or phrase at the start or after a comma. A rate at or below 10% is considered unremarkable in natural prose. Transition word usage appears natural."
+                },
+                {
+                    "label": "Flesch-Kincaid Grade Level",
+                    "rawValue": 16.719499478623565,
+                    "displayValue": "Grade 16.7",
+                    "status": "alert",
+                    "explanation": "The Flesch-Kincaid Grade Level is 16.7, which corresponds roughly to a US school grade 16.7 reading level. Grades below 12 are typical for general-audience writing. Highly elevated reading levels are associated with AI text that aims to sound sophisticated."
+                },
+                {
+                    "label": "Punctuation Pattern",
+                    "rawValue": 0.14285714285714285,
+                    "displayValue": "0.00 semicolons, 0.14 em-dashes per sentence",
+                    "status": "normal",
+                    "explanation": "Found 0 semicolons (0.00 per sentence) and 2 em-dashes (0.14 per sentence) across 14 sentences. Alert thresholds are 0.30 semicolons and 0.40 em-dashes per sentence. Punctuation usage appears natural."
+                },
+                {
+                    "label": "Rare Word Rate",
+                    "rawValue": 29.68036529680365,
+                    "displayValue": "29.7%",
+                    "status": "alert",
+                    "explanation": "65 of 219 qualifying words (29.7%) were not found in the common-word list. A rate between 3% and 8% is typical of natural writing. A very high proportion of uncommon words may indicate artificially elevated vocabulary, a trait sometimes seen in AI-generated text."
+                },
+                {
+                    "label": "Zipf's Law Fit (R²)",
+                    "rawValue": -1,
+                    "displayValue": "R² = -1.00",
+                    "status": "alert",
+                    "explanation": "The R² goodness-of-fit against Zipf's Law is -1.00, calculated across 189 unique word types from a total of 274 words. Natural text typically achieves R² above 0.92. A poor fit to Zipf's Law can indicate AI-generated text, where token sampling may produce an atypical frequency distribution."
+                },
+                {
+                    "label": "Hapax Legomenon Rate",
+                    "rawValue": 82.35294117647058,
+                    "displayValue": "82.4%",
+                    "status": "human_signal",
+                    "explanation": "154 of 187 unique words (82.4%) appear exactly once across 261 total words. A high hapax rate indicates diverse, natural vocabulary — a strong human writing indicator (Arxiv 2410.12341)."
+                },
+                {
+                    "label": "Paragraph Length Variance",
+                    "rawValue": 15.499570522776834,
+                    "displayValue": "CV 15.5%",
+                    "status": "warning",
+                    "explanation": "Paragraph length CV is 15.5% across 4 paragraphs (mean: 65 words, SD: 10 words). Unusually uniform paragraph lengths are a pattern commonly seen in AI-generated text."
+                },
+                {
+                    "label": "Function Word Density",
+                    "rawValue": 35.24904214559387,
+                    "displayValue": "35.2%",
+                    "status": "alert",
+                    "explanation": "92 of 261 words (35.2%) are function words (articles, prepositions, pronouns, auxiliaries, conjunctions). A low function word density suggests content-word-heavy writing, a pattern associated with AI-generated text."
+                },
+                {
+                    "label": "Shannon Entropy",
+                    "rawValue": 7.227645378023428,
+                    "displayValue": "7.23 bits\/word",
+                    "status": "human_signal",
+                    "explanation": "Shannon entropy is 7.23 bits\/word across 261 words (187 unique). High entropy indicates diverse, unpredictable word choices — characteristic of human writing (Venkatraman et al., 2024)."
+                },
+                {
+                    "label": "N-gram Repetition Rate",
+                    "rawValue": 0.3875968992248062,
+                    "displayValue": "0.4% repeated",
+                    "status": "human_signal",
+                    "explanation": "1 of 258 unique trigrams (0.4%) appear more than once across 259 total trigrams. Very few repeated phrases — characteristic of varied human writing."
+                },
+                {
+                    "label": "Sentence Opener Diversity",
+                    "rawValue": 85.71428571428571,
+                    "displayValue": "86% unique",
+                    "status": "human_signal",
+                    "explanation": "12 unique openers out of 14 sentences (86% diversity). Most repeated: \"even\" (2×), \"the\" (2×). High opener diversity is characteristic of natural human writing."
+                },
+                {
+                    "label": "Adjacent Sentence Delta",
+                    "rawValue": 9,
+                    "displayValue": "9 words",
+                    "status": "human_signal",
+                    "explanation": "Median word-count difference between consecutive sentences is 9 words across 14 sentences. High adjacent delta indicates natural rhythm variation — a human writing signal (Desaire et al., 2023)."
+                },
+                {
+                    "label": "Sentence Extremes Ratio",
+                    "rawValue": 28.57142857142857,
+                    "displayValue": "29% extreme",
+                    "status": "normal",
+                    "explanation": "4 of 14 sentences (29%) are at length extremes (3 short < 11 words, 1 long > 34 words). The proportion of extreme-length sentences is within the normal range."
+                },
+                {
+                    "label": "Question Frequency",
+                    "rawValue": 14.285714285714285,
+                    "displayValue": "14%",
+                    "status": "human_signal",
+                    "explanation": "2 of 14 sentences (14%) are questions. Frequent rhetorical questions are characteristic of natural human writing (Desaire et al., 2023)."
+                }
+            ]
+        },
+        {
+            "id": "ai-gemini-cop21-10-implementation",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The road to implementation — challenges ahead",
+            "score": 95,
+            "classification": "Likely AI-Generated",
+            "colour": "red",
+            "result": "pass",
+            "wordCount": 426,
+            "text": "While the diplomatic triumph of securing the Paris Agreement at COP21 in 2015 was widely celebrated, the subsequent road to implementing its provisions has illuminated the colossal and multifaceted challenges of transitioning the global economy. The fundamental hurdle facing the international community is the stark reality that the aggregate of the initial Nationally Determined Contributions submitted in Paris falls drastically short of what is scientifically required to limit global warming to 1.5 or even 2 degrees Celsius. Closing this \"emissions gap\" requires an unprecedented acceleration of decarbonization efforts across all sectors of the global economy, including energy generation, transportation, agriculture, and heavy industry. This necessitates not only massive technological innov…",
+            "detectorResults": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "explanation": "1 distinct AI vocabulary term was detected (\"multifaceted\"), contributing 2 points (cap: 15).",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 9,
+                    "cap": 10,
+                    "occurrences": 3,
+                    "explanation": "3 rule-of-three patterns were detected, contributing 9 points (cap: 10). Matched: \"transportation, agriculture, and heavy\"; \"financial resources, technology transfer, and capacity\"; \"devastating droughts, floods, and wildfires\".",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 4,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "explanation": "1 formal parallel construction was detected, contributing 4 points (cap: 10).",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Outline & Conclusion Patterns",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formulaic outline or conclusion patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "False Range",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No vague range constructions were detected in the text.",
+                    "confidence": "LOW"
+                },
+                {
+                    "category": "Vague Attribution",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No unattributed vague attribution phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Superficial Analysis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No superficial analysis phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Overgeneralisation",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No overgeneralisation phrases were detected in the text.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 2,
+                    "cap": 10,
+                    "occurrences": 1,
+                    "explanation": "1 undue emphasis signal was detected, contributing 2 points (cap: 10).",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Promotional Language",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No promotional language phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Elegant Variation",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No synonym clusters with 3 or more distinct members were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No trailing participle clauses were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No formulaic importance phrases were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Adverbial Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No adverbial sentence openers were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No grandiose metaphorical nouns were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Era\/World Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No cliché era\/world opening formulas were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Epistemic Markers",
+                    "score": 0,
+                    "cap": -8,
+                    "occurrences": 0,
+                    "explanation": "No epistemic markers (hedging, uncertainty, personal belief) were found. AI text typically lacks these markers entirely.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Contraction Usage",
+                    "score": 0,
+                    "cap": -6,
+                    "occurrences": 1,
+                    "explanation": "1 contraction found (0.2% of words): \"cannot\". Contractions are characteristic of natural human writing (PNAS 2023).",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "linguisticFactors": [
+                {
+                    "label": "Lexical Diversity (TTR)",
+                    "rawValue": 0.6374133949191686,
+                    "displayValue": "63.7%",
+                    "status": "normal",
+                    "explanation": "The Type-Token Ratio is 63.7% (276 unique words out of 433 total). A TTR between 60% and 85% is typical of natural, varied writing. This text falls within the expected range, suggesting healthy vocabulary variety."
+                },
+                {
+                    "label": "Sentence Length Variation (CV)",
+                    "rawValue": 0.25708244588975565,
+                    "displayValue": "25.7%",
+                    "status": "alert",
+                    "explanation": "The Coefficient of Variation for sentence length is 25.7% across 15 sentences (mean: 28.4 words per sentence). A CV of 45% or above is typical of natural human writing. Sentence lengths are unusually consistent — a pattern commonly associated with AI-generated text."
+                },
+                {
+                    "label": "Passive Voice Rate",
+                    "rawValue": 40,
+                    "displayValue": "40.0%",
+                    "status": "normal",
+                    "explanation": "6 of 15 sentences (40.0%) contain passive voice constructions. Passive voice usage is at a rate typical of human writing."
+                },
+                {
+                    "label": "Transition Word Rate",
+                    "rawValue": 13.333333333333334,
+                    "displayValue": "13.3%",
+                    "status": "warning",
+                    "explanation": "2 of 15 sentences (13.3%) contain a formal transition word or phrase at the start or after a comma. A rate at or below 10% is considered unremarkable in natural prose. Transition word usage is moderately elevated — a pattern worth noting."
+                },
+                {
+                    "label": "Flesch-Kincaid Grade Level",
+                    "rawValue": 21.5571454965358,
+                    "displayValue": "Grade 21.6",
+                    "status": "alert",
+                    "explanation": "The Flesch-Kincaid Grade Level is 21.6, which corresponds roughly to a US school grade 21.6 reading level. Grades below 12 are typical for general-audience writing. Highly elevated reading levels are associated with AI text that aims to sound sophisticated."
+                },
+                {
+                    "label": "Punctuation Pattern",
+                    "rawValue": 0.13333333333333333,
+                    "displayValue": "0.00 semicolons, 0.13 em-dashes per sentence",
+                    "status": "normal",
+                    "explanation": "Found 0 semicolons (0.00 per sentence) and 2 em-dashes (0.13 per sentence) across 15 sentences. Alert thresholds are 0.30 semicolons and 0.40 em-dashes per sentence. Punctuation usage appears natural."
+                },
+                {
+                    "label": "Rare Word Rate",
+                    "rawValue": 28.87700534759358,
+                    "displayValue": "28.9%",
+                    "status": "alert",
+                    "explanation": "108 of 374 qualifying words (28.9%) were not found in the common-word list. A rate between 3% and 8% is typical of natural writing. A very high proportion of uncommon words may indicate artificially elevated vocabulary, a trait sometimes seen in AI-generated text."
+                },
+                {
+                    "label": "Zipf's Law Fit (R²)",
+                    "rawValue": -0.6001774667099302,
+                    "displayValue": "R² = -0.60",
+                    "status": "alert",
+                    "explanation": "The R² goodness-of-fit against Zipf's Law is -0.60, calculated across 276 unique word types from a total of 433 words. Natural text typically achieves R² above 0.92. A poor fit to Zipf's Law can indicate AI-generated text, where token sampling may produce an atypical frequency distribution."
+                },
+                {
+                    "label": "Hapax Legomenon Rate",
+                    "rawValue": 81.98529411764706,
+                    "displayValue": "82.0%",
+                    "status": "human_signal",
+                    "explanation": "223 of 272 unique words (82.0%) appear exactly once across 428 total words. A high hapax rate indicates diverse, natural vocabulary — a strong human writing indicator (Arxiv 2410.12341)."
+                },
+                {
+                    "label": "Paragraph Length Variance",
+                    "rawValue": 5.485127439224376,
+                    "displayValue": "CV 5.5%",
+                    "status": "alert",
+                    "explanation": "Paragraph length CV is 5.5% across 3 paragraphs (mean: 142 words, SD: 8 words). Unusually uniform paragraph lengths are a pattern commonly seen in AI-generated text."
+                },
+                {
+                    "label": "Function Word Density",
+                    "rawValue": 35.51401869158878,
+                    "displayValue": "35.5%",
+                    "status": "alert",
+                    "explanation": "152 of 428 words (35.5%) are function words (articles, prepositions, pronouns, auxiliaries, conjunctions). A low function word density suggests content-word-heavy writing, a pattern associated with AI-generated text."
+                },
+                {
+                    "label": "Shannon Entropy",
+                    "rawValue": 7.44671277737332,
+                    "displayValue": "7.45 bits\/word",
+                    "status": "human_signal",
+                    "explanation": "Shannon entropy is 7.45 bits\/word across 428 words (272 unique). High entropy indicates diverse, unpredictable word choices — characteristic of human writing (Venkatraman et al., 2024)."
+                },
+                {
+                    "label": "N-gram Repetition Rate",
+                    "rawValue": 0.47393364928909953,
+                    "displayValue": "0.5% repeated",
+                    "status": "human_signal",
+                    "explanation": "2 of 422 unique trigrams (0.5%) appear more than once across 426 total trigrams. Very few repeated phrases — characteristic of varied human writing."
+                },
+                {
+                    "label": "Sentence Opener Diversity",
+                    "rawValue": 80,
+                    "displayValue": "80% unique",
+                    "status": "human_signal",
+                    "explanation": "12 unique openers out of 15 sentences (80% diversity). Most repeated: \"the\" (2×), \"this\" (2×), \"furthermore\" (2×). High opener diversity is characteristic of natural human writing."
+                },
+                {
+                    "label": "Adjacent Sentence Delta",
+                    "rawValue": 11,
+                    "displayValue": "11 words",
+                    "status": "human_signal",
+                    "explanation": "Median word-count difference between consecutive sentences is 11 words across 15 sentences. High adjacent delta indicates natural rhythm variation — a human writing signal (Desaire et al., 2023)."
+                },
+                {
+                    "label": "Sentence Extremes Ratio",
+                    "rawValue": 20,
+                    "displayValue": "20% extreme",
+                    "status": "normal",
+                    "explanation": "3 of 15 sentences (20%) are at length extremes (0 short < 11 words, 3 long > 34 words). The proportion of extreme-length sentences is within the normal range."
+                },
+                {
+                    "label": "Question Frequency",
+                    "rawValue": 0,
+                    "displayValue": "0%",
+                    "status": "alert",
+                    "explanation": "0 of 15 sentences (0%) are questions. Very few or no questions — AI text in formal register rarely uses rhetorical questions (Desaire et al., 2023)."
+                }
+            ]
+        },
+        {
+            "id": "ai-gemini-cop21-05-us-position",
+            "source": "ai-gemini",
+            "label": "ai",
+            "topic": "The US position and Obama's role",
+            "score": 44,
+            "classification": "Possibly AI-Generated",
+            "colour": "yellow",
+            "result": "uncertain",
+            "wordCount": 415,
+            "text": "The participation and posture of the United States at the COP21 summit in Paris were fundamentally different from its approach in previous international climate negotiations, largely due to the strategic vision and executive actions of President Barack Obama. Historically, the United States had been a reluctant participant in global climate treaties, most notably refusing to ratify the Kyoto Protocol due to concerns over domestic economic impacts and the exemption of major developing economies like China. However, President Obama entered his second term treating climate change as a legacy-defining issue and a paramount national security threat. Understanding the limitations of a divided US Congress, which was hostile to binding international climate treaties, the Obama administration maste…",
+            "detectorResults": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 2,
+                    "cap": 15,
+                    "occurrences": 1,
+                    "explanation": "1 distinct AI vocabulary term was detected (\"pivotal\"), contributing 2 points (cap: 15).",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No rule-of-three patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formal parallel constructions were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Outline & Conclusion Patterns",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formulaic outline or conclusion patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "False Range",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No vague range constructions were detected in the text.",
+                    "confidence": "LOW"
+                },
+                {
+                    "category": "Vague Attribution",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No unattributed vague attribution phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Superficial Analysis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No superficial analysis phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Overgeneralisation",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No overgeneralisation phrases were detected in the text.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No undue emphasis signals were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Promotional Language",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No promotional language phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Elegant Variation",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No synonym clusters with 3 or more distinct members were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No trailing participle clauses were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No formulaic importance phrases were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Adverbial Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No adverbial sentence openers were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No grandiose metaphorical nouns were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Era\/World Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No cliché era\/world opening formulas were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Epistemic Markers",
+                    "score": -2,
+                    "cap": -8,
+                    "occurrences": 1,
+                    "explanation": "1 epistemic marker was detected (\"could be\"). These markers express uncertainty or personal perspective — a strong indicator of human writing (Herbold et al., 2023).",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Contraction Usage",
+                    "score": 0,
+                    "cap": -6,
+                    "occurrences": 0,
+                    "explanation": "No contractions were found. AI text tends to use expanded forms (\"do not\" instead of \"don't\").",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "linguisticFactors": [
+                {
+                    "label": "Lexical Diversity (TTR)",
+                    "rawValue": 0.6152019002375297,
+                    "displayValue": "61.5%",
+                    "status": "normal",
+                    "explanation": "The Type-Token Ratio is 61.5% (259 unique words out of 421 total). A TTR between 60% and 85% is typical of natural, varied writing. This text falls within the expected range, suggesting healthy vocabulary variety."
+                },
+                {
+                    "label": "Sentence Length Variation (CV)",
+                    "rawValue": 0.2786546698431641,
+                    "displayValue": "27.9%",
+                    "status": "alert",
+                    "explanation": "The Coefficient of Variation for sentence length is 27.9% across 14 sentences (mean: 29.6 words per sentence). A CV of 45% or above is typical of natural human writing. Sentence lengths are unusually consistent — a pattern commonly associated with AI-generated text."
+                },
+                {
+                    "label": "Passive Voice Rate",
+                    "rawValue": 7.142857142857142,
+                    "displayValue": "7.1%",
+                    "status": "warning",
+                    "explanation": "1 of 14 sentences (7.1%) contain passive voice constructions. Passive voice usage is below the typical human range (>10%). Research shows instruction-tuned AI models use passive voice at roughly half the human rate."
+                },
+                {
+                    "label": "Transition Word Rate",
+                    "rawValue": 7.142857142857142,
+                    "displayValue": "7.1%",
+                    "status": "normal",
+                    "explanation": "1 of 14 sentences (7.1%) contain a formal transition word or phrase at the start or after a comma. A rate at or below 10% is considered unremarkable in natural prose. Transition word usage appears natural."
+                },
+                {
+                    "label": "Flesch-Kincaid Grade Level",
+                    "rawValue": 20.88702578893791,
+                    "displayValue": "Grade 20.9",
+                    "status": "alert",
+                    "explanation": "The Flesch-Kincaid Grade Level is 20.9, which corresponds roughly to a US school grade 20.9 reading level. Grades below 12 are typical for general-audience writing. Highly elevated reading levels are associated with AI text that aims to sound sophisticated."
+                },
+                {
+                    "label": "Punctuation Pattern",
+                    "rawValue": 0.07142857142857142,
+                    "displayValue": "0.07 semicolons, 0.00 em-dashes per sentence",
+                    "status": "normal",
+                    "explanation": "Found 1 semicolon (0.07 per sentence) and 0 em-dashes (0.00 per sentence) across 14 sentences. Alert thresholds are 0.30 semicolons and 0.40 em-dashes per sentence. Punctuation usage appears natural."
+                },
+                {
+                    "label": "Rare Word Rate",
+                    "rawValue": 27.500000000000004,
+                    "displayValue": "27.5%",
+                    "status": "alert",
+                    "explanation": "99 of 360 qualifying words (27.5%) were not found in the common-word list. A rate between 3% and 8% is typical of natural writing. A very high proportion of uncommon words may indicate artificially elevated vocabulary, a trait sometimes seen in AI-generated text."
+                },
+                {
+                    "label": "Zipf's Law Fit (R²)",
+                    "rawValue": -0.2417634633442245,
+                    "displayValue": "R² = -0.24",
+                    "status": "alert",
+                    "explanation": "The R² goodness-of-fit against Zipf's Law is -0.24, calculated across 259 unique word types from a total of 421 words. Natural text typically achieves R² above 0.92. A poor fit to Zipf's Law can indicate AI-generated text, where token sampling may produce an atypical frequency distribution."
+                },
+                {
+                    "label": "Hapax Legomenon Rate",
+                    "rawValue": 82.49027237354085,
+                    "displayValue": "82.5%",
+                    "status": "human_signal",
+                    "explanation": "212 of 257 unique words (82.5%) appear exactly once across 416 total words. A high hapax rate indicates diverse, natural vocabulary — a strong human writing indicator (Arxiv 2410.12341)."
+                },
+                {
+                    "label": "Paragraph Length Variance",
+                    "rawValue": 4.269890396787795,
+                    "displayValue": "CV 4.3%",
+                    "status": "alert",
+                    "explanation": "Paragraph length CV is 4.3% across 3 paragraphs (mean: 138 words, SD: 6 words). Unusually uniform paragraph lengths are a pattern commonly seen in AI-generated text."
+                },
+                {
+                    "label": "Function Word Density",
+                    "rawValue": 36.77884615384615,
+                    "displayValue": "36.8%",
+                    "status": "alert",
+                    "explanation": "153 of 416 words (36.8%) are function words (articles, prepositions, pronouns, auxiliaries, conjunctions). A low function word density suggests content-word-heavy writing, a pattern associated with AI-generated text."
+                },
+                {
+                    "label": "Shannon Entropy",
+                    "rawValue": 7.3290100695806935,
+                    "displayValue": "7.33 bits\/word",
+                    "status": "human_signal",
+                    "explanation": "Shannon entropy is 7.33 bits\/word across 416 words (257 unique). High entropy indicates diverse, unpredictable word choices — characteristic of human writing (Venkatraman et al., 2024)."
+                },
+                {
+                    "label": "N-gram Repetition Rate",
+                    "rawValue": 0.7371007371007371,
+                    "displayValue": "0.7% repeated",
+                    "status": "human_signal",
+                    "explanation": "3 of 407 unique trigrams (0.7%) appear more than once across 414 total trigrams. Very few repeated phrases — characteristic of varied human writing."
+                },
+                {
+                    "label": "Sentence Opener Diversity",
+                    "rawValue": 85.71428571428571,
+                    "displayValue": "86% unique",
+                    "status": "human_signal",
+                    "explanation": "12 unique openers out of 14 sentences (86% diversity). Most repeated: \"the\" (3×). High opener diversity is characteristic of natural human writing."
+                },
+                {
+                    "label": "Adjacent Sentence Delta",
+                    "rawValue": 15,
+                    "displayValue": "15 words",
+                    "status": "human_signal",
+                    "explanation": "Median word-count difference between consecutive sentences is 15 words across 14 sentences. High adjacent delta indicates natural rhythm variation — a human writing signal (Desaire et al., 2023)."
+                },
+                {
+                    "label": "Sentence Extremes Ratio",
+                    "rawValue": 50,
+                    "displayValue": "50% extreme",
+                    "status": "human_signal",
+                    "explanation": "7 of 14 sentences (50%) are at length extremes (0 short < 11 words, 7 long > 34 words). A high proportion of extreme-length sentences is characteristic of natural human writing (Desaire et al., 2023)."
+                },
+                {
+                    "label": "Question Frequency",
+                    "rawValue": 0,
+                    "displayValue": "0%",
+                    "status": "alert",
+                    "explanation": "0 of 14 sentences (0%) are questions. Very few or no questions — AI text in formal register rarely uses rhetorical questions (Desaire et al., 2023)."
+                }
+            ]
+        },
+        {
+            "id": "ai-claude-personal-02-unexpected-activity",
+            "source": "ai-claude",
+            "label": "ai",
+            "topic": "Finding confidence through an unexpected extracurricular activity",
+            "score": 0,
+            "classification": "Likely Human-Written",
+            "colour": "green",
+            "result": "fail",
+            "wordCount": 634,
+            "text": "For most of my life, I was the kind of person other people described using the word \"quiet.\" Not shy, exactly — shyness implies a desire to connect that is thwarted by fear. I was something more settled than that. I had accepted, with the calm pragmatism of someone who has been picked last for enough teams, that I was not someone who took up space.\n\nSo when my friend Marcus told me he had signed me up for the school radio station, I assumed he was joking. Marcus had been doing the morning announcements since sophomore year, his voice booming through the hallways at seven-forty-five with a confidence I found both admirable and baffling.\n\n\"We need someone for the Thursday afternoon slot,\" he said. \"Just an hour. Play some music, talk a little.\"\n\n\"I don't talk,\" I said. \"That's my whole thing…",
+            "detectorResults": [
+                {
+                    "category": "AI Vocabulary",
+                    "score": 0,
+                    "cap": 15,
+                    "occurrences": 0,
+                    "explanation": "No AI vocabulary terms were detected in the text.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Rule of Three",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No rule-of-three patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Negative Parallelism",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formal parallel constructions were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Outline & Conclusion Patterns",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No formulaic outline or conclusion patterns were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "False Range",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No vague range constructions were detected in the text.",
+                    "confidence": "LOW"
+                },
+                {
+                    "category": "Vague Attribution",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No unattributed vague attribution phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Superficial Analysis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No superficial analysis phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Overgeneralisation",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No overgeneralisation phrases were detected in the text.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Undue Emphasis",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No undue emphasis signals were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Promotional Language",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No promotional language phrases were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Elegant Variation",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No synonym clusters with 3 or more distinct members were detected in the text.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Trailing Participle",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No trailing participle clauses were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Formulaic Importance",
+                    "score": 0,
+                    "cap": 12,
+                    "occurrences": 0,
+                    "explanation": "No formulaic importance phrases were detected.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Adverbial Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No adverbial sentence openers were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Grandiose Nouns",
+                    "score": 0,
+                    "cap": 8,
+                    "occurrences": 0,
+                    "explanation": "No grandiose metaphorical nouns were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Era\/World Openers",
+                    "score": 0,
+                    "cap": 10,
+                    "occurrences": 0,
+                    "explanation": "No cliché era\/world opening formulas were detected.",
+                    "confidence": "MEDIUM"
+                },
+                {
+                    "category": "Epistemic Markers",
+                    "score": 0,
+                    "cap": -8,
+                    "occurrences": 0,
+                    "explanation": "No epistemic markers (hedging, uncertainty, personal belief) were found. AI text typically lacks these markers entirely.",
+                    "confidence": "HIGH"
+                },
+                {
+                    "category": "Contraction Usage",
+                    "score": 0,
+                    "cap": -6,
+                    "occurrences": 5,
+                    "explanation": "5 contractions found (0.8% of words): \"don't\", \"that's\", \"you're\", \"haven't\", \"wouldn't\". Contractions are characteristic of natural human writing (PNAS 2023).",
+                    "confidence": "MEDIUM"
+                }
+            ],
+            "linguisticFactors": [
+                {
+                    "label": "Lexical Diversity (TTR)",
+                    "rawValue": 0.4889937106918239,
+                    "displayValue": "48.9%",
+                    "status": "warning",
+                    "explanation": "The Type-Token Ratio is 48.9% (311 unique words out of 636 total). A TTR between 60% and 85% is typical of natural, varied writing. This lower-than-expected ratio may indicate repetitive or formulaic language, a trait sometimes associated with AI-generated text."
+                },
+                {
+                    "label": "Sentence Length Variation (CV)",
+                    "rawValue": 0.6145026201173264,
+                    "displayValue": "61.5%",
+                    "status": "normal",
+                    "explanation": "The Coefficient of Variation for sentence length is 61.5% across 33 sentences (mean: 19.2 words per sentence). A CV of 45% or above is typical of natural human writing. This text shows healthy variation in sentence length."
+                },
+                {
+                    "label": "Passive Voice Rate",
+                    "rawValue": 24.242424242424242,
+                    "displayValue": "24.2%",
+                    "status": "normal",
+                    "explanation": "8 of 33 sentences (24.2%) contain passive voice constructions. Passive voice usage is at a rate typical of human writing."
+                },
+                {
+                    "label": "Transition Word Rate",
+                    "rawValue": 0,
+                    "displayValue": "0.0%",
+                    "status": "normal",
+                    "explanation": "0 of 33 sentences (0.0%) contain a formal transition word or phrase at the start or after a comma. A rate at or below 10% is considered unremarkable in natural prose. Transition word usage appears natural."
+                },
+                {
+                    "label": "Flesch-Kincaid Grade Level",
+                    "rawValue": 9.830451686678103,
+                    "displayValue": "Grade 9.8",
+                    "status": "normal",
+                    "explanation": "The Flesch-Kincaid Grade Level is 9.8, which corresponds roughly to a US school grade 9.8 reading level. Grades below 12 are typical for general-audience writing. This text is within an accessible, natural reading level."
+                },
+                {
+                    "label": "Punctuation Pattern",
+                    "rawValue": 0.09090909090909091,
+                    "displayValue": "0.00 semicolons, 0.09 em-dashes per sentence",
+                    "status": "normal",
+                    "explanation": "Found 0 semicolons (0.00 per sentence) and 3 em-dashes (0.09 per sentence) across 33 sentences. Alert thresholds are 0.30 semicolons and 0.40 em-dashes per sentence. Punctuation usage appears natural."
+                },
+                {
+                    "label": "Rare Word Rate",
+                    "rawValue": 16.08961303462322,
+                    "displayValue": "16.1%",
+                    "status": "alert",
+                    "explanation": "79 of 491 qualifying words (16.1%) were not found in the common-word list. A rate between 3% and 8% is typical of natural writing. A very high proportion of uncommon words may indicate artificially elevated vocabulary, a trait sometimes seen in AI-generated text."
+                },
+                {
+                    "label": "Zipf's Law Fit (R²)",
+                    "rawValue": -0.626619413947263,
+                    "displayValue": "R² = -0.63",
+                    "status": "alert",
+                    "explanation": "The R² goodness-of-fit against Zipf's Law is -0.63, calculated across 311 unique word types from a total of 636 words. Natural text typically achieves R² above 0.92. A poor fit to Zipf's Law can indicate AI-generated text, where token sampling may produce an atypical frequency distribution."
+                },
+                {
+                    "label": "Hapax Legomenon Rate",
+                    "rawValue": 68.28478964401295,
+                    "displayValue": "68.3%",
+                    "status": "human_signal",
+                    "explanation": "211 of 309 unique words (68.3%) appear exactly once across 634 total words. A high hapax rate indicates diverse, natural vocabulary — a strong human writing indicator (Arxiv 2410.12341)."
+                },
+                {
+                    "label": "Paragraph Length Variance",
+                    "rawValue": 49.481081580196374,
+                    "displayValue": "CV 49.5%",
+                    "status": "normal",
+                    "explanation": "Paragraph length CV is 49.5% across 15 paragraphs (mean: 42 words, SD: 21 words). Paragraph length variation is within the normal range."
+                },
+                {
+                    "label": "Function Word Density",
+                    "rawValue": 51.10410094637224,
+                    "displayValue": "51.1%",
+                    "status": "human_signal",
+                    "explanation": "324 of 634 words (51.1%) are function words (articles, prepositions, pronouns, auxiliaries, conjunctions). A high function word density is characteristic of natural human writing (Arxiv 2407.03646)."
+                },
+                {
+                    "label": "Shannon Entropy",
+                    "rawValue": 7.532627216158655,
+                    "displayValue": "7.53 bits\/word",
+                    "status": "human_signal",
+                    "explanation": "Shannon entropy is 7.53 bits\/word across 634 words (309 unique). High entropy indicates diverse, unpredictable word choices — characteristic of human writing (Venkatraman et al., 2024)."
+                },
+                {
+                    "label": "N-gram Repetition Rate",
+                    "rawValue": 1.7713365539452495,
+                    "displayValue": "1.8% repeated",
+                    "status": "human_signal",
+                    "explanation": "11 of 621 unique trigrams (1.8%) appear more than once across 632 total trigrams. Very few repeated phrases — characteristic of varied human writing."
+                },
+                {
+                    "label": "Sentence Opener Diversity",
+                    "rawValue": 66.66666666666666,
+                    "displayValue": "67% unique",
+                    "status": "normal",
+                    "explanation": "22 unique openers out of 33 sentences (67% diversity). Most repeated: \"i\" (7×), \"the\" (2×), \"but\" (2×). Sentence opener diversity is within the normal range."
+                },
+                {
+                    "label": "Adjacent Sentence Delta",
+                    "rawValue": 16,
+                    "displayValue": "16 words",
+                    "status": "human_signal",
+                    "explanation": "Median word-count difference between consecutive sentences is 16 words across 33 sentences. High adjacent delta indicates natural rhythm variation — a human writing signal (Desaire et al., 2023)."
+                },
+                {
+                    "label": "Sentence Extremes Ratio",
+                    "rawValue": 39.39393939393939,
+                    "displayValue": "39% extreme",
+                    "status": "human_signal",
+                    "explanation": "13 of 33 sentences (39%) are at length extremes (10 short < 11 words, 3 long > 34 words). A high proportion of extreme-length sentences is characteristic of natural human writing (Desaire et al., 2023)."
+                },
+                {
+                    "label": "Question Frequency",
+                    "rawValue": 0,
+                    "displayValue": "0%",
+                    "status": "alert",
+                    "explanation": "0 of 33 sentences (0%) are questions. Very few or no questions — AI text in formal register rarely uses rhetorical questions (Desaire et al., 2023)."
+                }
+            ]
+        }
+    ],
+    "summary": {
+        "human": {
+            "total": 34,
+            "pass": 31,
+            "fail": 0,
+            "uncertain": 3,
+            "accuracy": 91.2
+        },
+        "ai-claude": {
+            "total": 34,
+            "pass": 6,
+            "fail": 19,
+            "uncertain": 9,
+            "accuracy": 17.6
+        },
+        "ai-gemini": {
+            "total": 34,
+            "pass": 20,
+            "fail": 13,
+            "uncertain": 1,
+            "accuracy": 58.8
+        },
+        "ai-chatgpt": {
+            "total": 34,
+            "pass": 15,
+            "fail": 14,
+            "uncertain": 5,
+            "accuracy": 44.1
+        }
+    },
+    "overall": {
+        "total": 136,
+        "pass": 72,
+        "fail": 46,
+        "uncertain": 18,
+        "overallAccuracy": 52.9,
+        "aiDetectionRate": 40.2,
+        "humanPassRate": 91.2,
+        "falsePositives": 0,
+        "falseNegatives": 46,
+        "truePositives": 41,
+        "trueNegatives": 31
+    },
+    "thresholds": {
+        "ai": 45,
+        "human": 30
+    },
+    "generatedAt": "2026-03-30T05:31:59+00:00"
+}
